@@ -1,3 +1,4 @@
+import substitution.AutoKey
 import substitution.Caesar
 import substitution.MonoAlphabetic
 import substitution.Vignere
@@ -26,4 +27,11 @@ fun main() {
     println("CIPHER TEXT : $cipherText")
     plainText = vignere.decipher(cipherText)
     println("PLAIN TEXT  : $plainText")
+
+    println("-------------------- VIGNERE CIPHER ----------------------")
+    val autoKey = AutoKey("deceptive")
+    cipherText = autoKey.encipher("wearediscoveredsaveyourself")
+    println("CIPHER TEXT : $cipherText")
+//    plainText = vignere.decipher(cipherText)
+//    println("PLAIN TEXT  : $plainText")
 }
