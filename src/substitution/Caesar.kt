@@ -1,4 +1,4 @@
-package monoalphabetic
+package substitution
 
 class Caesar(k: Int) {
 
