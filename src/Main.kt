@@ -1,22 +1,29 @@
+import substitution.Caesar
 import substitution.MonoAlphabetic
-import substitution.PolyAlphabetic
+import substitution.Vignere
 
 fun main() {
+    var plainText: String
+    var cipherText: String
 
+    println("-------------------- CAESAR CIPHER ----------------------")
+    val caesar = Caesar(5)
+    cipherText = caesar.encipher("hello")
+    println("CIPHER TEXT : $cipherText")
+    plainText = caesar.decipher(cipherText)
+    println("PLAIN TEXT  : $plainText")
 
-//    val caesar = Caesar(5)
-//    val cipherText = caesar.encipher("AbXy")
-//    println(cipherText)
-//    val plainText = caesar.decipher(cipherText)
-//    println(plainText)
-
+    println("---------------- MONO-ALPHABETIC CIPHER ------------------")
     val monoAlphabetic = MonoAlphabetic(42)
-    var cipherText = monoAlphabetic.encipher("establishment")
-    println(cipherText)
-    var plainText = monoAlphabetic.decipher(cipherText)
-    println(plainText)
+    cipherText = monoAlphabetic.encipher("establishment")
+    println("CIPHER TEXT : $cipherText")
+    plainText = monoAlphabetic.decipher(cipherText)
+    println("PLAIN TEXT  : $plainText")
 
-    val polyAlphabetic = PolyAlphabetic("deceptive")
-    cipherText = polyAlphabetic.encipher("wearediscoveredsaveyourself")
-    println(cipherText)
+    println("-------------------- VIGNERE CIPHER ----------------------")
+    val vignere = Vignere("deceptive")
+    cipherText = vignere.encipher("wearediscoveredsaveyourself")
+    println("CIPHER TEXT : $cipherText")
+    plainText = monoAlphabetic.decipher(cipherText)
+    println("PLAIN TEXT  : $plainText")
 }

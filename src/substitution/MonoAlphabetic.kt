@@ -34,6 +34,6 @@ class MonoAlphabetic(randomSeed: Long) {
             val newIndex = keyMap.indexOf(oldIndex) + 97
             outputStream.add(newIndex.toChar())
         }
-        return outputStream.joinToString("")
+        return outputStream.joinToString("").toUpperCase()
     }
 }

@@ -1,6 +1,6 @@
 package substitution
 
-class PolyAlphabetic(private val key: String) {
+class Vignere(private val key: String) {
     fun encipher(plainText: String): String {
         val lowerCaseText = plainText.toLowerCase()
         val inputStream = lowerCaseText.toCharArray()

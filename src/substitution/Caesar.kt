@@ -25,6 +25,6 @@ class Caesar(k: Int) {
             val newIndex = ((oldIndex - key + 26) % 26) + 97
             outputStream.add(newIndex.toChar())
         }
-        return outputStream.joinToString("")
+        return outputStream.joinToString("").toUpperCase()
     }
 }
