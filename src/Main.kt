@@ -10,4 +10,6 @@ fun main() {
     val monoAlphabetic = MonoAlphabetic(42)
     val cipherText = monoAlphabetic.encipher("establishment")
     println(cipherText)
+    val plainText = monoAlphabetic.decipher(cipherText)
+    println(plainText)
 }

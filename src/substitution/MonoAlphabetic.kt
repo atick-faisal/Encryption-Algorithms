@@ -24,4 +24,16 @@ class MonoAlphabetic(randomSeed: Long) {
         }
         return outputStream.joinToString("")
     }
+
+    fun decipher(cipherText: String): String {
+        val lowerCaseText = cipherText.toLowerCase()
+        val inputStream = lowerCaseText.toCharArray()
+        val outputStream = mutableListOf<Char>()
+        for (letter in inputStream) {
+            val oldIndex = letter.toInt()
+            val newIndex = keyMap.indexOf(oldIndex) + 97
+            outputStream.add(newIndex.toChar())
+        }
+        return outputStream.joinToString("")
+    }
 }
