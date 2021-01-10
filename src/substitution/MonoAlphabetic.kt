@@ -14,8 +14,8 @@ class MonoAlphabetic(randomSeed: Long) {
     }
 
     fun encipher(plainText: String): String {
-        val lowerCaseText = plainText.toUpperCase()
-        val inputStream = lowerCaseText.toCharArray()
+        val upperCaseText = plainText.toUpperCase()
+        val inputStream = upperCaseText.toCharArray()
         val outputStream = mutableListOf<Char>()
         for (letter in inputStream) {
             val oldIndex = letter.toInt() - 65
@@ -26,8 +26,8 @@ class MonoAlphabetic(randomSeed: Long) {
     }
 
     fun decipher(cipherText: String): String {
-        val lowerCaseText = cipherText.toUpperCase()
-        val inputStream = lowerCaseText.toCharArray()
+        val upperCaseText = cipherText.toUpperCase()
+        val inputStream = upperCaseText.toCharArray()
         val outputStream = mutableListOf<Char>()
         for (letter in inputStream) {
             val oldIndex = letter.toInt()
