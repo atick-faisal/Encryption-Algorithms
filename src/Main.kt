@@ -1,6 +1,9 @@
 import substitution.MonoAlphabetic
+import substitution.PolyAlphabetic
 
 fun main() {
+
+
 //    val caesar = Caesar(5)
 //    val cipherText = caesar.encipher("AbXy")
 //    println(cipherText)
@@ -8,8 +11,12 @@ fun main() {
 //    println(plainText)
 
     val monoAlphabetic = MonoAlphabetic(42)
-    val cipherText = monoAlphabetic.encipher("establishment")
+    var cipherText = monoAlphabetic.encipher("establishment")
     println(cipherText)
-    val plainText = monoAlphabetic.decipher(cipherText)
+    var plainText = monoAlphabetic.decipher(cipherText)
     println(plainText)
+
+    val polyAlphabetic = PolyAlphabetic("deceptive")
+    cipherText = polyAlphabetic.encipher("wearediscoveredsaveyourself")
+    println(cipherText)
 }
