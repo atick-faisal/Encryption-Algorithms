@@ -32,6 +32,6 @@ fun main() {
     val autoKey = AutoKey("deceptive")
     cipherText = autoKey.encipher("wearediscoveredsaveyourself")
     println("CIPHER TEXT : $cipherText")
-//    plainText = vignere.decipher(cipherText)
-//    println("PLAIN TEXT  : $plainText")
+    plainText = autoKey.decipher(cipherText)
+    println("PLAIN TEXT  : $plainText")
 }
