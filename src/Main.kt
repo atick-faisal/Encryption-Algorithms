@@ -24,6 +24,6 @@ fun main() {
     val vignere = Vignere("deceptive")
     cipherText = vignere.encipher("wearediscoveredsaveyourself")
     println("CIPHER TEXT : $cipherText")
-    plainText = monoAlphabetic.decipher(cipherText)
+    plainText = vignere.decipher(cipherText)
     println("PLAIN TEXT  : $plainText")
 }

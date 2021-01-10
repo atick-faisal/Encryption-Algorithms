@@ -3,7 +3,7 @@ package substitution
 import java.util.Random
 
 class MonoAlphabetic(randomSeed: Long) {
-    private val keyMap = (97..122).toMutableList()
+    private val keyMap = (65..90).toMutableList()
 
     init {
         generateMapping(randomSeed)
@@ -14,11 +14,11 @@ class MonoAlphabetic(randomSeed: Long) {
     }
 
     fun encipher(plainText: String): String {
-        val lowerCaseText = plainText.toLowerCase()
+        val lowerCaseText = plainText.toUpperCase()
         val inputStream = lowerCaseText.toCharArray()
         val outputStream = mutableListOf<Char>()
         for (letter in inputStream) {
-            val oldIndex = letter.toInt() - 97
+            val oldIndex = letter.toInt() - 65
             val newIndex = keyMap[oldIndex]
             outputStream.add(newIndex.toChar())
         }
@@ -26,14 +26,14 @@ class MonoAlphabetic(randomSeed: Long) {
     }
 
     fun decipher(cipherText: String): String {
-        val lowerCaseText = cipherText.toLowerCase()
+        val lowerCaseText = cipherText.toUpperCase()
         val inputStream = lowerCaseText.toCharArray()
         val outputStream = mutableListOf<Char>()
         for (letter in inputStream) {
             val oldIndex = letter.toInt()
-            val newIndex = keyMap.indexOf(oldIndex) + 97
+            val newIndex = keyMap.indexOf(oldIndex) + 65
             outputStream.add(newIndex.toChar())
         }
-        return outputStream.joinToString("").toUpperCase()
+        return outputStream.joinToString("")
     }
 }
