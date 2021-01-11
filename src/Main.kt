@@ -39,6 +39,6 @@ fun main() {
     println("-------------------- RAIL-FENCE CIPHER ----------------------")
     cipherText = RailFence.encipher("meetmeafterthetogaparty")
     println("CIPHER TEXT : $cipherText")
-//    plainText = autoKey.decipher(cipherText)
-//    println("PLAIN TEXT  : $plainText")
+    plainText = RailFence.decipher(cipherText)
+    println("PLAIN TEXT  : $plainText")
 }
