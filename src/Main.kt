@@ -3,6 +3,7 @@ import substitution.Caesar
 import substitution.MonoAlphabetic
 import substitution.Vignere
 import transposition.RailFence
+import transposition.RowTransposition
 
 fun main() {
     var plainText: String
@@ -41,4 +42,11 @@ fun main() {
     println("CIPHER TEXT : $cipherText")
     plainText = RailFence.decipher(cipherText)
     println("PLAIN TEXT  : $plainText")
+
+    println("----------------- ROW-TRANSPOSITION CIPHER ------------------")
+    val rowTransposition = RowTransposition("4312567")
+    cipherText = rowTransposition.encipher("attackpostponeduntiltwoam")
+    println("CIPHER TEXT : $cipherText")
+//    plainText = RailFence.decipher(cipherText)
+//    println("PLAIN TEXT  : $plainText")
 }
