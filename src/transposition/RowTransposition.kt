@@ -3,7 +3,7 @@ package transposition
 class RowTransposition(key: String) {
 
     companion object {
-        private const val padding = "XYZXYZXYZXYZXYZXYZ"
+        private const val PADDING = "XYZXYZXYZXYZXYZXYZ"
     }
 
     private val permutation = mutableListOf<Int>()
@@ -26,7 +26,7 @@ class RowTransposition(key: String) {
     fun encipher(plainText: String): String {
         val paddingLength = keyLength - (plainText.length % keyLength)
         val upperCaseText = plainText.toUpperCase()+
-                padding.slice(0 until paddingLength)
+                PADDING.slice(0 until paddingLength)
         val inputStream = upperCaseText.toCharArray()
         val outputStream = mutableListOf<Char>()
 
@@ -34,6 +34,19 @@ class RowTransposition(key: String) {
             for (index in (key - 1) until inputStream.size step keyLength)
                 outputStream.add(inputStream[index])
         }
+
+        return outputStream.joinToString("")
+    }
+
+    fun decipher(cipherText: String): String {
+        val stepSize = (cipherText.length / keyLength)
+        val upperCaseText = cipherText.toUpperCase()
+        val inputStream = upperCaseText.toCharArray()
+        val outputStream = mutableListOf<Char>()
+
+        for (i in 0 until stepSize)
+            for (key in permutation)
+                outputStream.add(inputStream[(key - 1) * stepSize + i])
 
         return outputStream.joinToString("")
     }

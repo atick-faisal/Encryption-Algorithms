@@ -47,6 +47,6 @@ fun main() {
     val rowTransposition = RowTransposition("4312567")
     cipherText = rowTransposition.encipher("attackpostponeduntiltwoam")
     println("CIPHER TEXT : $cipherText")
-//    plainText = RailFence.decipher(cipherText)
-//    println("PLAIN TEXT  : $plainText")
+    plainText = rowTransposition.decipher(cipherText)
+    println("PLAIN TEXT  : $plainText")
 }
