@@ -2,6 +2,7 @@ import substitution.AutoKey
 import substitution.Caesar
 import substitution.MonoAlphabetic
 import substitution.Vignere
+import transposition.RailFence
 
 fun main() {
     var plainText: String
@@ -34,4 +35,10 @@ fun main() {
     println("CIPHER TEXT : $cipherText")
     plainText = autoKey.decipher(cipherText)
     println("PLAIN TEXT  : $plainText")
+
+    println("-------------------- RAIL-FENCE CIPHER ----------------------")
+    cipherText = RailFence.encipher("meetmeafterthetogaparty")
+    println("CIPHER TEXT : $cipherText")
+//    plainText = autoKey.decipher(cipherText)
+//    println("PLAIN TEXT  : $plainText")
 }
