@@ -53,6 +53,6 @@ fun main() {
     println("PLAIN TEXT  : $plainText")
 
     ////////////////////////////////////////////////////////////////////////
-    val y = Fiestel.expandPermutation(0b1001)
+    val y = Fiestel.applySBoxes(0b01100111)
     print(Integer.toBinaryString(y))
 }
