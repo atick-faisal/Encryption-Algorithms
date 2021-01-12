@@ -3,6 +3,7 @@ package substitution
 import java.util.Random
 
 class MonoAlphabetic(randomSeed: Long) {
+
     private val keyMap = (65..90).toMutableList()
 
     init {
@@ -11,6 +12,12 @@ class MonoAlphabetic(randomSeed: Long) {
 
     private fun generateMapping(randomSeed: Long) {
         keyMap.shuffle(Random(randomSeed))
+    }
+
+    fun getKeyMap(): String {
+        val alphabet = (65..90).map { i -> i.toChar() }
+        val mapping = keyMap.map { i -> i.toChar() }
+        return "\n\t\t\t\t$alphabet\n\t\t\t\t$mapping\n"
     }
 
     fun encipher(plainText: String): String {
