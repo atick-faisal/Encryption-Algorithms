@@ -53,6 +53,7 @@ fun main() {
 
     ////////////////////////////////////////////////////////////////////////
     val s = SubKey(0b1010000010)
-    val y = s.getKey1()
-    print(Integer.toBinaryString(y))
+    val y1 = s.getKey1()
+    val y2 = s.getKey2()
+    print(Integer.toBinaryString(y2))
 }

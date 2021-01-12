@@ -51,4 +51,13 @@ class SubKey(private val key: Int) {
         intermediateKey = (ls1MSB shl 5) or ls1LSB
         return permutation8(intermediateKey)
     }
+
+    fun getKey2(): Int {
+        val msb = intermediateKey shr 5
+        val lsb = intermediateKey and 0b11111
+        val ls1MSB = leftShift2(msb)
+        val ls1LSB = leftShift2(lsb)
+        intermediateKey = (ls1MSB shl 5) or ls1LSB
+        return permutation8(intermediateKey)
+    }
 }
