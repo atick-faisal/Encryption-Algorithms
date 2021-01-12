@@ -11,48 +11,48 @@ fun main() {
     var plainText: Any?
     var cipherText: Any?
 
-    println("-------------------- CAESAR CIPHER ----------------------")
+    println("\n-------------------- CAESAR CIPHER ----------------------")
     val caesar = Caesar(5)
     cipherText = caesar.encipher("hello")
     println("CIPHER TEXT : $cipherText")
     plainText = caesar.decipher(cipherText)
     println("PLAIN TEXT  : $plainText")
 
-    println("---------------- MONO-ALPHABETIC CIPHER ------------------")
+    println("\n---------------- MONO-ALPHABETIC CIPHER ------------------")
     val monoAlphabetic = MonoAlphabetic(42)
     cipherText = monoAlphabetic.encipher("establishment")
     println("CIPHER TEXT : $cipherText")
     plainText = monoAlphabetic.decipher(cipherText)
     println("PLAIN TEXT  : $plainText")
 
-    println("-------------------- VIGNERE CIPHER ----------------------")
+    println("\n-------------------- VIGNERE CIPHER ----------------------")
     val vignere = Vignere("deceptive")
     cipherText = vignere.encipher("wearediscoveredsaveyourself")
     println("CIPHER TEXT : $cipherText")
     plainText = vignere.decipher(cipherText)
     println("PLAIN TEXT  : $plainText")
 
-    println("-------------------- VIGNERE CIPHER ----------------------")
+    println("\n-------------------- VIGNERE CIPHER ----------------------")
     val autoKey = AutoKey("deceptive")
     cipherText = autoKey.encipher("wearediscoveredsaveyourself")
     println("CIPHER TEXT : $cipherText")
     plainText = autoKey.decipher(cipherText)
     println("PLAIN TEXT  : $plainText")
 
-    println("-------------------- RAIL-FENCE CIPHER ----------------------")
+    println("\n-------------------- RAIL-FENCE CIPHER ----------------------")
     cipherText = RailFence.encipher("meetmeafterthetogaparty")
     println("CIPHER TEXT : $cipherText")
     plainText = RailFence.decipher(cipherText)
     println("PLAIN TEXT  : $plainText")
 
-    println("----------------- ROW-TRANSPOSITION CIPHER ------------------")
+    println("\n----------------- ROW-TRANSPOSITION CIPHER ------------------")
     val rowTransposition = RowTransposition("4312567")
     cipherText = rowTransposition.encipher("attackpostponeduntiltwoam")
     println("CIPHER TEXT : $cipherText")
     plainText = rowTransposition.decipher(cipherText)
     println("PLAIN TEXT  : $plainText")
 
-    println("------------------- SDES ENCRYPTION --------------------")
+    println("\n------------------- SDES ENCRYPTION --------------------")
     val sdes = SDES(0b1010000010)
     cipherText = sdes.encryptByte(0b01110010)
     println("CIPHER BYTE : ${Integer.toBinaryString(cipherText)}")
@@ -64,16 +64,16 @@ fun main() {
     plainText = sdes.decrypt(cipherText)
     println("PLAIN TEXT  : $plainText")
 
-    println("--------------------------- DES ENCRYPTION -----------------------------")
-    val des = DES(0xAA_BB_09_18_27_36_CC_DDUL)
-    cipherText = des.encryptBlock(0x12_34_56_AB_CD_13_25_36UL)
-    println()
-    println("CIPHER BLOCK : $cipherText")
-//    plainText = sdes.decryptByte(cipherText)
-//    println("PLAIN BYTE  : ${Integer.toBinaryString(plainText)}")
-
-
-    val r = RoundKey(0xAA_BB_09_18_27_36_CC_DDUL)
-    val keys = r.generateKeys()
-    println(keys)
+    println("\n--------------------------- DES ENCRYPTION -----------------------------")
+    val plainTextBock = 0x12_34_56_AB_CD_13_25_36UL
+    val keyDES = 0xAA_BB_09_18_27_36_CC_DDUL
+    println("\nENCRYPTION :\n")
+    println("PLAIN TEXT BLOCK : ${plainTextBock.toHexString()}")
+    println("KEY              : ${keyDES.toHexString()}\n")
+    val des = DES(keyDES)
+    cipherText = des.encryptBlock(plainTextBock)
+    println("\nCIPHER TEXT BLOCK : ${cipherText.toHexString()}\n")
+    println("\nDECRYPTION :\n")
+    plainText = des.decryptBlock(cipherText)
+    println("\nPLAIN TEXT BLOCK  : ${plainText.toHexString()}\n")
 }
