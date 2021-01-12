@@ -1,4 +1,5 @@
 import sdes.Fiestel
+import sdes.SDES
 import sdes.SubKey
 import sdes.initialPermutation
 import substitution.AutoKey
@@ -53,7 +54,10 @@ fun main() {
     plainText = rowTransposition.decipher(cipherText)
     println("PLAIN TEXT  : $plainText")
 
-    ////////////////////////////////////////////////////////////////////////
-    val y = initialPermutation(0b01110010)
-    print(Integer.toBinaryString(y))
+    println("------------------- SDES ENCRYPTION --------------------")
+    val sdes = SDES(0b1010000010)
+    cipherText = Integer.toBinaryString(sdes.encipher(0b01110010))
+    println("CIPHER TEXT : $cipherText")
+//    plainText = rowTransposition.decipher(cipherText)
+//    println("PLAIN TEXT  : $plainText")
 }
