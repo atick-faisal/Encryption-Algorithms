@@ -1,3 +1,4 @@
+import des.RoundKey
 import sdes.SDES
 import substitution.AutoKey
 import substitution.Caesar
@@ -62,4 +63,8 @@ fun main() {
     println("CIPHER TEXT : $cipherText")
     plainText = sdes.decrypt(cipherText)
     println("PLAIN TEXT  : $plainText")
+
+    val r = RoundKey(0)
+    val y = r.permutedChoice1(0xFF_FF_FF_FF_FF_FF_FF_FFUL)
+    println(y)
 }
