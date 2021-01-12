@@ -1,3 +1,4 @@
+import sdes.SubKey
 import substitution.AutoKey
 import substitution.Caesar
 import substitution.MonoAlphabetic
@@ -49,4 +50,9 @@ fun main() {
     println("CIPHER TEXT : $cipherText")
     plainText = rowTransposition.decipher(cipherText)
     println("PLAIN TEXT  : $plainText")
+
+    ////////////////////////////////////////////////////////////////////////
+    val s = SubKey(1)
+    val y = s.permutation10(0b1010000010)
+    print(Integer.toBinaryString(y))
 }
