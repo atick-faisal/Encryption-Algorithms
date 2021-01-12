@@ -39,9 +39,7 @@ object Fiestel {
             val temp = (x shr ((8 - i) * 6)) and mask
             val value = getSValueAt(temp.toInt(), SBOXES[i - 1])
             result = (result shl 4) or value
-            println("RESULT : ${result}")
         }
-        println("SBOX: $result")
         return result
     }
 

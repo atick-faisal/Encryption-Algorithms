@@ -30,7 +30,7 @@ class RoundKey(private val key: ULong) {
     private fun leftShift(x: ULong, shift: Int, numBits: Int = 28): ULong {
         val mask: ULong = (2.0.pow(numBits)).toULong() - 1UL
         val msb = x shr 28
-        val lsb = x and 0b111_11111111_11111111_11111111UL
+        val lsb = x and 0b1111_11111111_11111111_11111111UL
         val shiftedMSB = ((msb shl shift) or (msb shr (numBits - shift))) and mask
         val shiftedLSB = ((lsb shl shift) or (lsb shr (numBits - shift))) and mask
         return ((shiftedMSB shl 28) or shiftedLSB)

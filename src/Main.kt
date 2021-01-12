@@ -1,6 +1,4 @@
-import des.Fiestel
-import des.RoundKey
-import des.initialPermutation
+import des.*
 import sdes.SDES
 import substitution.AutoKey
 import substitution.Caesar
@@ -66,13 +64,15 @@ fun main() {
     plainText = sdes.decrypt(cipherText)
     println("PLAIN TEXT  : $plainText")
 
+    println("------------------- DES ENCRYPTION --------------------")
+    val des = DES(0xAA_BB_09_18_27_36_CC_DDUL)
+    cipherText = des.encryptBlock(0x12_34_56_AB_CD_13_25_36UL)
+    println("CIPHER BYTE : $cipherText")
+//    plainText = sdes.decryptByte(cipherText)
+//    println("PLAIN BYTE  : ${Integer.toBinaryString(plainText)}")
+
+
     val r = RoundKey(0xAA_BB_09_18_27_36_CC_DDUL)
     val keys = r.generateKeys()
-    println(keys[0])
-    val ip = initialPermutation(0x12_34_56_AB_CD_13_25_36UL)
-    println(ip)
-    val y = Fiestel.apply(ip, keys[0])
-    println(y)
-    val a = 0b111111L
-    println(a.toInt())
+    println(keys)
 }
