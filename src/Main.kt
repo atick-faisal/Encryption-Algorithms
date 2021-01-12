@@ -53,6 +53,6 @@ fun main() {
     println("PLAIN TEXT  : $plainText")
 
     ////////////////////////////////////////////////////////////////////////
-    val y = Fiestel.permutation4(0b1011)
+    val y = Fiestel.apply(0b10101001, 0b10100100)
     print(Integer.toBinaryString(y))
 }
