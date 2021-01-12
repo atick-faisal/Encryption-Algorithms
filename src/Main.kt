@@ -65,6 +65,8 @@ fun main() {
     println("PLAIN TEXT  : $plainText")
 
     val r = RoundKey(0)
-    val y = r.permutedChoice1(0xFF_FF_FF_FF_FF_FF_FF_FFUL)
-    println(y)
+    val x = r.permutedChoice1(0xAA_BB_09_18_27_36_CC_DDUL)
+    val y = r.leftShift(x, 1)
+    val z = r.permutedChoice2(y)
+    println(z)
 }
