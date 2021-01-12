@@ -52,7 +52,7 @@ fun main() {
     println("PLAIN TEXT  : $plainText")
 
     ////////////////////////////////////////////////////////////////////////
-    val s = SubKey(1)
-    val y = s.leftShift1(0b11000)
+    val s = SubKey(0b1010000010)
+    val y = s.getKey1()
     print(Integer.toBinaryString(y))
 }
