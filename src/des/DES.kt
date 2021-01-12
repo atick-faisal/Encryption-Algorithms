@@ -10,7 +10,13 @@ class DES(key: ULong) {
         for (i in 0 until 16) {
             intermediateBlock = Fiestel.apply(intermediateBlock, roundKeys[i])
             if (i != 15) intermediateBlock = switch(intermediateBlock)
-            println("ROUND $i: ${intermediateBlock.toHexString()}")
+            println(
+                    "ROUND %2d : %s   KEY %2d : %s"
+                    .format(i,
+                            intermediateBlock.toHexString(),
+                            i,
+                            roundKeys[i].toHexString())
+            )
         }
         return inversePermutation(intermediateBlock)
     }

@@ -40,8 +40,8 @@ fun switch(x: ULong): ULong {
 fun ULong.toHexString(): String {
     var result = ""
     for (i in 1..8) {
-        val octet = (this shr (8 - i)) and 0xFF_FFUL
-        result += Integer.toHexString(octet.toInt())
+        val octet = (this shr (8 - i) * 8) and 0xFFUL
+        result += "%3s".format(Integer.toHexString(octet.toInt()))
     }
-    return result
+    return result.toUpperCase()
 }

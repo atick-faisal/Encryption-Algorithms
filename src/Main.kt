@@ -64,10 +64,11 @@ fun main() {
     plainText = sdes.decrypt(cipherText)
     println("PLAIN TEXT  : $plainText")
 
-    println("------------------- DES ENCRYPTION --------------------")
+    println("--------------------------- DES ENCRYPTION -----------------------------")
     val des = DES(0xAA_BB_09_18_27_36_CC_DDUL)
     cipherText = des.encryptBlock(0x12_34_56_AB_CD_13_25_36UL)
-    println("CIPHER BYTE : $cipherText")
+    println()
+    println("CIPHER BLOCK : $cipherText")
 //    plainText = sdes.decryptByte(cipherText)
 //    println("PLAIN BYTE  : ${Integer.toBinaryString(plainText)}")
 
