@@ -1,21 +1,11 @@
 package sdes
 
-object Fiestel {
+import sdes.Config.EP
+import sdes.Config.P4
+import sdes.Config.S0
+import sdes.Config.S1
 
-    private val EP = listOf(4, 1, 2, 3, 2, 3, 4, 1)
-    private val S0 = listOf(
-            listOf(0b01, 0b00, 0b11, 0b10),
-            listOf(0b11, 0b10, 0b01, 0b00),
-            listOf(0b00, 0b10, 0b01, 0b11),
-            listOf(0b11, 0b01, 0b11, 0b10)
-    )
-    private val S1 = listOf(
-            listOf(0b00, 0b01, 0b10, 0b11),
-            listOf(0b10, 0b00, 0b01, 0b11),
-            listOf(0b11, 0b00, 0b01, 0b00),
-            listOf(0b10, 0b01, 0b00, 0b11)
-    )
-    private val P4 = listOf(2, 4, 3, 1)
+object Fiestel {
 
     private fun expandPermutation(x: Int): Int {
         var result = 0

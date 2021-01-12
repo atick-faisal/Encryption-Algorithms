@@ -1,15 +1,12 @@
 package sdes
 
+import sdes.Config.P10
+import sdes.Config.P8
 import kotlin.math.pow
 
 class SubKey(private val key: Int) {
 
     private var intermediateKey = 0
-
-    companion object {
-        private val P10 = listOf(3, 5, 2, 7, 4, 10, 1, 9, 8, 6)
-        private val P8 = listOf(6, 3, 7, 4, 8, 5, 10, 9)
-    }
 
     private fun permutation10(x: Int): Int {
         var result = 0
