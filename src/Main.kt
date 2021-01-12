@@ -1,3 +1,4 @@
+import sdes.Fiestel
 import sdes.SubKey
 import substitution.AutoKey
 import substitution.Caesar
@@ -52,8 +53,6 @@ fun main() {
     println("PLAIN TEXT  : $plainText")
 
     ////////////////////////////////////////////////////////////////////////
-    val s = SubKey(0b1010000010)
-    val y1 = s.getKey1()
-    val y2 = s.getKey2()
-    print(Integer.toBinaryString(y2))
+    val y = Fiestel.expandPermutation(0b1001)
+    print(Integer.toBinaryString(y))
 }
