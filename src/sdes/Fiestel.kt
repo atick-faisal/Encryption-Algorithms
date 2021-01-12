@@ -49,6 +49,6 @@ object Fiestel {
         val temp2 = applySBoxes(temp1)
         val p4 = permutation4(temp2)
         val newMSB = msb xor p4
-        return (newMSB shl 4) + lsb
+        return (newMSB shl 4) or lsb
     }
 }
