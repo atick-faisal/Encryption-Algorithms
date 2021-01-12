@@ -1,7 +1,4 @@
-import sdes.Fiestel
 import sdes.SDES
-import sdes.SubKey
-import sdes.initialPermutation
 import substitution.AutoKey
 import substitution.Caesar
 import substitution.MonoAlphabetic
@@ -10,8 +7,8 @@ import transposition.RailFence
 import transposition.RowTransposition
 
 fun main() {
-    var plainText: String
-    var cipherText: String
+    var plainText: Any?
+    var cipherText: Any?
 
     println("-------------------- CAESAR CIPHER ----------------------")
     val caesar = Caesar(5)
@@ -56,8 +53,13 @@ fun main() {
 
     println("------------------- SDES ENCRYPTION --------------------")
     val sdes = SDES(0b1010000010)
-    cipherText = Integer.toBinaryString(sdes.encipher(0b01110010))
+    cipherText = sdes.encryptByte(0b01110010)
+    println("CIPHER BYTE : ${Integer.toBinaryString(cipherText)}")
+    plainText = sdes.decryptByte(cipherText)
+    println("PLAIN BYTE  : ${Integer.toBinaryString(plainText)}")
+    ////////////////////////////////////////////////////////////////////
+    cipherText = sdes.encrypt("entanglement")
     println("CIPHER TEXT : $cipherText")
-//    plainText = rowTransposition.decipher(cipherText)
-//    println("PLAIN TEXT  : $plainText")
+    plainText = sdes.decrypt(cipherText)
+    println("PLAIN TEXT  : $plainText")
 }
