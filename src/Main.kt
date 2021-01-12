@@ -64,9 +64,7 @@ fun main() {
     plainText = sdes.decrypt(cipherText)
     println("PLAIN TEXT  : $plainText")
 
-    val r = RoundKey(0)
-    val x = r.permutedChoice1(0xAA_BB_09_18_27_36_CC_DDUL)
-    val y = r.leftShift(x, 1)
-    val z = r.permutedChoice2(y)
-    println(z)
+    val r = RoundKey(0xAA_BB_09_18_27_36_CC_DDUL)
+    val keys = r.generateKeys()
+    println(keys)
 }

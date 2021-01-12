@@ -44,7 +44,7 @@ object Config {
             27, 3, 9, 19, 13, 30, 6,
             22, 11, 4, 25
     )
-    var sboxes = arrayOf(
+    var SBOXES = arrayOf(
             arrayOf(
                     intArrayOf(14, 4, 13, 1, 2, 15, 11, 8, 3, 10, 6, 12, 5, 9, 0, 7),
                     intArrayOf(0, 15, 7, 4, 14, 2, 13, 1, 10, 6, 12, 11, 9, 5, 3, 8),
@@ -94,5 +94,5 @@ object Config {
                     intArrayOf(2, 1, 14, 7, 4, 10, 8, 13, 15, 12, 9, 0, 3, 5, 6, 11)
             )
     )
-    var shiftBits = intArrayOf(1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1)
+    var SHIFTS = intArrayOf(1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1)
 }
