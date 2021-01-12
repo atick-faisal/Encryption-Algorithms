@@ -15,12 +15,23 @@ object Fiestel {
             listOf(0b11, 0b00, 0b01, 0b00),
             listOf(0b10, 0b01, 0b00, 0b11)
     )
+    private val P4 = listOf(2, 4, 3, 1)
 
     fun expandPermutation(x: Int): Int {
         var result = 0
         EP.forEachIndexed { index, p ->
             val currentBit = (x shr (4 - p)) and 1
             val shiftedX = currentBit shl (7 - index)
+            result += shiftedX
+        }
+        return result
+    }
+
+    fun permutation4(x: Int): Int {
+        var result = 0
+        P4.forEachIndexed { index, p ->
+            val currentBit = (x shr (4 - p)) and 1
+            val shiftedX = currentBit shl (3 - index)
             result += shiftedX
         }
         return result
