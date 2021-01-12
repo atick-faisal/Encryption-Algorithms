@@ -1,5 +1,7 @@
 package sdes
 
+import kotlin.math.pow
+
 class SubKey(private val key: Int) {
 
     companion object {
@@ -25,5 +27,15 @@ class SubKey(private val key: Int) {
             result += shiftedX
         }
         return result
+    }
+
+    fun leftShift1(x: Int, numBits: Int = 5): Int {
+        val mask = (2.0.pow(numBits)).toInt() - 1
+        return ((x shl 1) or (x shr (numBits - 1))) and mask
+    }
+
+    fun leftShift2(x: Int, numBits: Int = 5): Int {
+        val mask = (2.0.pow(numBits)).toInt() - 1
+        return ((x shl 2) or (x shr (numBits - 2))) and mask
     }
 }

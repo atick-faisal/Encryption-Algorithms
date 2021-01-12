@@ -53,6 +53,6 @@ fun main() {
 
     ////////////////////////////////////////////////////////////////////////
     val s = SubKey(1)
-    val y = s.permutation8(0b0000111000)
+    val y = s.leftShift1(0b11000)
     print(Integer.toBinaryString(y))
 }
