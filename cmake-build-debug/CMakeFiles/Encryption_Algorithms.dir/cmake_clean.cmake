@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Encryption_Algorithms.dir/main.c.o"
+  "CMakeFiles/Encryption_Algorithms.dir/substitution/autokey.c.o"
   "CMakeFiles/Encryption_Algorithms.dir/substitution/caesar.c.o"
   "CMakeFiles/Encryption_Algorithms.dir/substitution/monoalphabetic.c.o"
   "CMakeFiles/Encryption_Algorithms.dir/substitution/vignere.c.o"

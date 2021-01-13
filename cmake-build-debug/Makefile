@@ -170,6 +170,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/main.c.s
 .PHONY : main.c.s
 
+substitution/autokey.o: substitution/autokey.c.o
+
+.PHONY : substitution/autokey.o
+
+# target to build an object file
+substitution/autokey.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/autokey.c.o
+.PHONY : substitution/autokey.c.o
+
+substitution/autokey.i: substitution/autokey.c.i
+
+.PHONY : substitution/autokey.i
+
+# target to preprocess a source file
+substitution/autokey.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/autokey.c.i
+.PHONY : substitution/autokey.c.i
+
+substitution/autokey.s: substitution/autokey.c.s
+
+.PHONY : substitution/autokey.s
+
+# target to generate assembly for a file
+substitution/autokey.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/autokey.c.s
+.PHONY : substitution/autokey.c.s
+
 substitution/caesar.o: substitution/caesar.c.o
 
 .PHONY : substitution/caesar.o
@@ -263,6 +290,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... substitution/autokey.o"
+	@echo "... substitution/autokey.i"
+	@echo "... substitution/autokey.s"
 	@echo "... substitution/caesar.o"
 	@echo "... substitution/caesar.i"
 	@echo "... substitution/caesar.s"
