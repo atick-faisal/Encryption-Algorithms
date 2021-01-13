@@ -170,6 +170,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/main.c.s
 .PHONY : main.c.s
 
+substitution/caesar.o: substitution/caesar.c.o
+
+.PHONY : substitution/caesar.o
+
+# target to build an object file
+substitution/caesar.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/caesar.c.o
+.PHONY : substitution/caesar.c.o
+
+substitution/caesar.i: substitution/caesar.c.i
+
+.PHONY : substitution/caesar.i
+
+# target to preprocess a source file
+substitution/caesar.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/caesar.c.i
+.PHONY : substitution/caesar.c.i
+
+substitution/caesar.s: substitution/caesar.c.s
+
+.PHONY : substitution/caesar.s
+
+# target to generate assembly for a file
+substitution/caesar.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/caesar.c.s
+.PHONY : substitution/caesar.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +209,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... substitution/caesar.o"
+	@echo "... substitution/caesar.i"
+	@echo "... substitution/caesar.s"
 .PHONY : help
 
 

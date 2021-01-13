@@ -79,6 +79,12 @@
 		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/main.c">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
+		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/substitution/caesar.c">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
+		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/substitution/caesar.h">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
 		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

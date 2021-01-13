@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/Encryption_Algorithms.dir/main.c.o  -o Encryption_Algorithms 
+/usr/bin/cc -g   CMakeFiles/Encryption_Algorithms.dir/main.c.o CMakeFiles/Encryption_Algorithms.dir/substitution/caesar.c.o  -o Encryption_Algorithms 
