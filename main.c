@@ -31,8 +31,8 @@ int main() {
     printf("PLAIN TEXT : %s\nKEY        : %s\n", plain_text_vignere, key_vignere);
     encrypt_vignere(plain_text_vignere, cipher_text_vignere, key_vignere);
     printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_vignere);
-//    decrypt_mono_alphabetic(cipher_text_mono, plain_text_mono, key_map);
-//    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_mono);
+    decrypt_vignere(cipher_text_vignere, plain_text_vignere, key_vignere);
+    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_vignere);
 
     return 0;
 }
