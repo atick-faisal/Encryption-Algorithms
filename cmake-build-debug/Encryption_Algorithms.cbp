@@ -106,6 +106,15 @@
 		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/substitution/vignere.h">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
+		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/transposition/railfence.c">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
+		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/transposition/railfence.h">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
+		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/transposition/transposition.h">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
 		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

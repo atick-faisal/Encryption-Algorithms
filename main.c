@@ -3,6 +3,7 @@
 #include "substitution/monoalphabetic.h"
 #include "substitution/vignere.h"
 #include "substitution/autokey.h"
+#include "transposition/railfence.h"
 
 int main() {
     printf("\n--------------------- CAESAR CIPHER ----------------------\n");
@@ -47,6 +48,14 @@ int main() {
     decrypt_autokey(cipher_text_autokey, plain_text_autokey, key_autokey);
     printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_autokey);
 
+    printf("\n------------------- AUTOKEY CIPHER -------------------\n");
+    char plain_text_railfence[] = "CRYPTOGRAPHY";
+    char cipher_text_railfence[50];
+    printf("PLAIN TEXT : %s\n", plain_text_railfence);
+    encrypt_railfence(plain_text_railfence, cipher_text_railfence);
+    printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_railfence);
+//    decrypt_autokey(cipher_text_autokey, plain_text_autokey, key_autokey);
+//    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_autokey);
 
     return 0;
 }

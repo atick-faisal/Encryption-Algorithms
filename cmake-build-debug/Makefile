@@ -278,6 +278,33 @@ substitution/vignere.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/vignere.c.s
 .PHONY : substitution/vignere.c.s
 
+transposition/railfence.o: transposition/railfence.c.o
+
+.PHONY : transposition/railfence.o
+
+# target to build an object file
+transposition/railfence.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/transposition/railfence.c.o
+.PHONY : transposition/railfence.c.o
+
+transposition/railfence.i: transposition/railfence.c.i
+
+.PHONY : transposition/railfence.i
+
+# target to preprocess a source file
+transposition/railfence.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/transposition/railfence.c.i
+.PHONY : transposition/railfence.c.i
+
+transposition/railfence.s: transposition/railfence.c.s
+
+.PHONY : transposition/railfence.s
+
+# target to generate assembly for a file
+transposition/railfence.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/transposition/railfence.c.s
+.PHONY : transposition/railfence.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -302,6 +329,9 @@ help:
 	@echo "... substitution/vignere.o"
 	@echo "... substitution/vignere.i"
 	@echo "... substitution/vignere.s"
+	@echo "... transposition/railfence.o"
+	@echo "... transposition/railfence.i"
+	@echo "... transposition/railfence.s"
 .PHONY : help
 
 
