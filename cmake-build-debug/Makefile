@@ -224,6 +224,33 @@ substitution/monoalphabetic.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/monoalphabetic.c.s
 .PHONY : substitution/monoalphabetic.c.s
 
+substitution/vignere.o: substitution/vignere.c.o
+
+.PHONY : substitution/vignere.o
+
+# target to build an object file
+substitution/vignere.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/vignere.c.o
+.PHONY : substitution/vignere.c.o
+
+substitution/vignere.i: substitution/vignere.c.i
+
+.PHONY : substitution/vignere.i
+
+# target to preprocess a source file
+substitution/vignere.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/vignere.c.i
+.PHONY : substitution/vignere.c.i
+
+substitution/vignere.s: substitution/vignere.c.s
+
+.PHONY : substitution/vignere.s
+
+# target to generate assembly for a file
+substitution/vignere.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/vignere.c.s
+.PHONY : substitution/vignere.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -242,6 +269,9 @@ help:
 	@echo "... substitution/monoalphabetic.o"
 	@echo "... substitution/monoalphabetic.i"
 	@echo "... substitution/monoalphabetic.s"
+	@echo "... substitution/vignere.o"
+	@echo "... substitution/vignere.i"
+	@echo "... substitution/vignere.s"
 .PHONY : help
 
 

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "substitution/caesar.h"
 #include "substitution/monoalphabetic.h"
+#include "substitution/vignere.h"
 
 int main() {
     printf("\n--------------------- CAESAR CIPHER ----------------------\n");
@@ -22,6 +23,16 @@ int main() {
     printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_mono);
     decrypt_mono_alphabetic(cipher_text_mono, plain_text_mono, key_map);
     printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_mono);
+
+    printf("\n------------------- VIGNERE CIPHER -------------------\n");
+    char plain_text_vignere[] = "WEAREDISCOVEREDHIDEYOURSELF";
+    char cipher_text_vignere[50];
+    char key_vignere[] = "deceptive";
+    printf("PLAIN TEXT : %s\nKEY        : %s\n", plain_text_vignere, key_vignere);
+    encrypt_vignere(plain_text_vignere, cipher_text_vignere, key_vignere);
+    printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_vignere);
+//    decrypt_mono_alphabetic(cipher_text_mono, plain_text_mono, key_map);
+//    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_mono);
 
     return 0;
 }
