@@ -305,6 +305,33 @@ transposition/railfence.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/transposition/railfence.c.s
 .PHONY : transposition/railfence.c.s
 
+transposition/rowtransposition.o: transposition/rowtransposition.c.o
+
+.PHONY : transposition/rowtransposition.o
+
+# target to build an object file
+transposition/rowtransposition.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/transposition/rowtransposition.c.o
+.PHONY : transposition/rowtransposition.c.o
+
+transposition/rowtransposition.i: transposition/rowtransposition.c.i
+
+.PHONY : transposition/rowtransposition.i
+
+# target to preprocess a source file
+transposition/rowtransposition.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/transposition/rowtransposition.c.i
+.PHONY : transposition/rowtransposition.c.i
+
+transposition/rowtransposition.s: transposition/rowtransposition.c.s
+
+.PHONY : transposition/rowtransposition.s
+
+# target to generate assembly for a file
+transposition/rowtransposition.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/transposition/rowtransposition.c.s
+.PHONY : transposition/rowtransposition.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -332,6 +359,9 @@ help:
 	@echo "... transposition/railfence.o"
 	@echo "... transposition/railfence.i"
 	@echo "... transposition/railfence.s"
+	@echo "... transposition/rowtransposition.o"
+	@echo "... transposition/rowtransposition.i"
+	@echo "... transposition/rowtransposition.s"
 .PHONY : help
 
 

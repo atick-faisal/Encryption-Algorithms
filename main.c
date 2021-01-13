@@ -4,6 +4,7 @@
 #include "substitution/vignere.h"
 #include "substitution/autokey.h"
 #include "transposition/railfence.h"
+#include "transposition/rowtransposition.h"
 
 int main() {
     printf("\n--------------------- CAESAR CIPHER ----------------------\n");
@@ -48,7 +49,7 @@ int main() {
     decrypt_autokey(cipher_text_autokey, plain_text_autokey, key_autokey);
     printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_autokey);
 
-    printf("\n------------------- AUTOKEY CIPHER -------------------\n");
+    printf("\n------------------- RAIL FENCE CIPHER -------------------\n");
     char plain_text_railfence[] = "CRYPTOGRAPHY";
     char cipher_text_railfence[50];
     printf("PLAIN TEXT : %s\n", plain_text_railfence);
@@ -56,6 +57,17 @@ int main() {
     printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_railfence);
     decrypt_railfence(cipher_text_railfence, plain_text_railfence);
     printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_railfence);
+
+    printf("\n--------------- ROW TRANSPOSITION CIPHER ---------------\n");
+    char plain_text_rt[] = "ATTACKPOSTPONEDUNTILTWOAM";
+    char cipher_text_rt[50];
+    char key_rt[] = "4312567";
+    printf("PLAIN TEXT : %s\nKEY        : %s\n", plain_text_rt, key_rt);
+    encrypt_rowtransposition(plain_text_rt, cipher_text_rt, key_rt);
+    printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_rt);
+//    decrypt_vignere(cipher_text_vignere, plain_text_vignere, key_vignere);
+//    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_vignere);
+
 
     return 0;
 }

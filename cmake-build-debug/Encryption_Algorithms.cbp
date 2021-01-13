@@ -112,6 +112,12 @@
 		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/transposition/railfence.h">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
+		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/transposition/rowtransposition.c">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
+		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/transposition/rowtransposition.h">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
 		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/transposition/transposition.h">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>

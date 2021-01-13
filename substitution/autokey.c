@@ -1,14 +1,14 @@
 #include "substitution.h"
 #include "autokey.h"
 
-void generate_autokey(char* key, char* cipher_text, char* autokey) {
+void generate_autokey(char* key, char* plain_text, char* autokey) {
     int i = 0;
     unsigned int key_length = strlen(key);
-    while (i < (strlen(cipher_text))) {
+    while (i < (strlen(plain_text))) {
         if (i < key_length) {
             autokey[i] = (char) toupper(key[i]);
         } else {
-            autokey[i] = cipher_text[i - key_length];
+            autokey[i] = plain_text[i - key_length];
         }
         i++;
     }
