@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Encryption_Algorithms.dir/main.c.o"
   "CMakeFiles/Encryption_Algorithms.dir/substitution/caesar.c.o"
+  "CMakeFiles/Encryption_Algorithms.dir/substitution/monoalphabetic.c.o"
   "Encryption_Algorithms"
   "Encryption_Algorithms.pdb"
 )

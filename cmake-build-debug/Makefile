@@ -197,6 +197,33 @@ substitution/caesar.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/caesar.c.s
 .PHONY : substitution/caesar.c.s
 
+substitution/monoalphabetic.o: substitution/monoalphabetic.c.o
+
+.PHONY : substitution/monoalphabetic.o
+
+# target to build an object file
+substitution/monoalphabetic.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/monoalphabetic.c.o
+.PHONY : substitution/monoalphabetic.c.o
+
+substitution/monoalphabetic.i: substitution/monoalphabetic.c.i
+
+.PHONY : substitution/monoalphabetic.i
+
+# target to preprocess a source file
+substitution/monoalphabetic.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/monoalphabetic.c.i
+.PHONY : substitution/monoalphabetic.c.i
+
+substitution/monoalphabetic.s: substitution/monoalphabetic.c.s
+
+.PHONY : substitution/monoalphabetic.s
+
+# target to generate assembly for a file
+substitution/monoalphabetic.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/substitution/monoalphabetic.c.s
+.PHONY : substitution/monoalphabetic.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +239,9 @@ help:
 	@echo "... substitution/caesar.o"
 	@echo "... substitution/caesar.i"
 	@echo "... substitution/caesar.s"
+	@echo "... substitution/monoalphabetic.o"
+	@echo "... substitution/monoalphabetic.i"
+	@echo "... substitution/monoalphabetic.s"
 .PHONY : help
 
 

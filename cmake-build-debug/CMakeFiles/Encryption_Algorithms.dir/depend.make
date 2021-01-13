@@ -3,7 +3,13 @@
 
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../main.c
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../substitution/caesar.h
+CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../substitution/monoalphabetic.h
 
 CMakeFiles/Encryption_Algorithms.dir/substitution/caesar.c.o: ../substitution/caesar.c
 CMakeFiles/Encryption_Algorithms.dir/substitution/caesar.c.o: ../substitution/caesar.h
+CMakeFiles/Encryption_Algorithms.dir/substitution/caesar.c.o: ../substitution/substitution.h
+
+CMakeFiles/Encryption_Algorithms.dir/substitution/monoalphabetic.c.o: ../substitution/monoalphabetic.c
+CMakeFiles/Encryption_Algorithms.dir/substitution/monoalphabetic.c.o: ../substitution/monoalphabetic.h
+CMakeFiles/Encryption_Algorithms.dir/substitution/monoalphabetic.c.o: ../substitution/substitution.h
 

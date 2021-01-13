@@ -11,10 +11,10 @@ stdio.h
 -
 substitution/caesar.h
 /home/andromeda/Java/Encryption-Algorithms/substitution/caesar.h
+substitution/monoalphabetic.h
+/home/andromeda/Java/Encryption-Algorithms/substitution/monoalphabetic.h
 
 /home/andromeda/Java/Encryption-Algorithms/substitution/caesar.h
-string.h
--
-ctype.h
--
+
+/home/andromeda/Java/Encryption-Algorithms/substitution/monoalphabetic.h
 

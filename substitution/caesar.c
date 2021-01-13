@@ -1,3 +1,4 @@
+#include "substitution.h"
 #include "caesar.h"
 
 void encrypt_caesar(char* plain_text, char* cipher_text, int key) {
