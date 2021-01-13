@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/andromeda/Java/Encryption-Algorithms/main.c
+stdio.h
+-
+substitution/caesar.h
+/home/andromeda/Java/Encryption-Algorithms/substitution/caesar.h
+
+/home/andromeda/Java/Encryption-Algorithms/substitution/caesar.c
+caesar.h
+/home/andromeda/Java/Encryption-Algorithms/substitution/caesar.h
+
+/home/andromeda/Java/Encryption-Algorithms/substitution/caesar.h
+string.h
+-
+ctype.h
+-
+
