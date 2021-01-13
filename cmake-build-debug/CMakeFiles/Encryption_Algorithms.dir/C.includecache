@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/andromeda/Java/Encryption-Algorithms/main.c
+stdio.h
+-
+substitution/caesar.h
+/home/andromeda/Java/Encryption-Algorithms/substitution/caesar.h
+substitution/monoalphabetic.h
+/home/andromeda/Java/Encryption-Algorithms/substitution/monoalphabetic.h
+substitution/vignere.h
+/home/andromeda/Java/Encryption-Algorithms/substitution/vignere.h
+substitution/autokey.h
+/home/andromeda/Java/Encryption-Algorithms/substitution/autokey.h
+string.h
+-
+
 /home/andromeda/Java/Encryption-Algorithms/substitution/autokey.c
 substitution.h
 /home/andromeda/Java/Encryption-Algorithms/substitution/substitution.h
@@ -14,9 +28,15 @@ autokey.h
 
 /home/andromeda/Java/Encryption-Algorithms/substitution/autokey.h
 
+/home/andromeda/Java/Encryption-Algorithms/substitution/caesar.h
+
+/home/andromeda/Java/Encryption-Algorithms/substitution/monoalphabetic.h
+
 /home/andromeda/Java/Encryption-Algorithms/substitution/substitution.h
 string.h
 -
 ctype.h
 -
+
+/home/andromeda/Java/Encryption-Algorithms/substitution/vignere.h
 

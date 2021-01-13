@@ -3,7 +3,6 @@
 #include "substitution/monoalphabetic.h"
 #include "substitution/vignere.h"
 #include "substitution/autokey.h"
-#include <string.h>
 
 int main() {
     printf("\n--------------------- CAESAR CIPHER ----------------------\n");
@@ -45,8 +44,8 @@ int main() {
     printf("PLAIN TEXT : %s\nKEY        : %s\n", plain_text_autokey, key_autokey);
     encrypt_autokey(plain_text_autokey, cipher_text_autokey, key_autokey);
     printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_autokey);
-//    decrypt_vignere(cipher_text_vignere, plain_text_vignere, key_vignere);
-//    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_vignere);
+    decrypt_autokey(cipher_text_autokey, plain_text_autokey, key_autokey);
+    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_autokey);
 
 
     return 0;
