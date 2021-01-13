@@ -16,5 +16,17 @@ substitution/monoalphabetic.h
 
 /home/andromeda/Java/Encryption-Algorithms/substitution/caesar.h
 
+/home/andromeda/Java/Encryption-Algorithms/substitution/monoalphabetic.c
+substitution.h
+/home/andromeda/Java/Encryption-Algorithms/substitution/substitution.h
+monoalphabetic.h
 /home/andromeda/Java/Encryption-Algorithms/substitution/monoalphabetic.h
+
+/home/andromeda/Java/Encryption-Algorithms/substitution/monoalphabetic.h
+
+/home/andromeda/Java/Encryption-Algorithms/substitution/substitution.h
+string.h
+-
+ctype.h
+-
 

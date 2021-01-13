@@ -20,8 +20,8 @@ int main() {
     printf("PLAIN TEXT : %s\nKEY        : %s\n", plain_text_mono, key_map);
     encrypt_mono_alphabetic(plain_text_mono, cipher_text_mono, key_map);
     printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_mono);
-//    (cipher_text_mono, plain_text_mono, key);
-//    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_mono);
+    decrypt_mono_alphabetic(cipher_text_mono, plain_text_mono, key_map);
+    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_mono);
 
     return 0;
 }

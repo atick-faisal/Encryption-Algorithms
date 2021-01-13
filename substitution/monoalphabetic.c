@@ -11,3 +11,14 @@ void encrypt_mono_alphabetic(char* plain_text, char* cipher_text, const char* ke
     }
     cipher_text[i]  = 0;
 }
+
+void decrypt_mono_alphabetic(char* cipher_text, char* plain_text, const char* key_map) {
+    int i = 0;
+    while (cipher_text[i] != 0) {
+        char current_letter = (char) toupper(cipher_text[i]);
+        const char *index = strchr(key_map, current_letter) + 65;
+        plain_text[i] = (char) (index - key_map);
+        i++;
+    }
+    plain_text[i]  = 0;
+}
