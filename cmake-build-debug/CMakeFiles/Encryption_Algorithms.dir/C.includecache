@@ -32,5 +32,17 @@ transposition/rowtransposition.h
 
 /home/andromeda/Java/Encryption-Algorithms/transposition/railfence.h
 
+/home/andromeda/Java/Encryption-Algorithms/transposition/rowtransposition.c
+transposition.h
+/home/andromeda/Java/Encryption-Algorithms/transposition/transposition.h
+rowtransposition.h
 /home/andromeda/Java/Encryption-Algorithms/transposition/rowtransposition.h
+
+/home/andromeda/Java/Encryption-Algorithms/transposition/rowtransposition.h
+
+/home/andromeda/Java/Encryption-Algorithms/transposition/transposition.h
+string.h
+-
+ctype.h
+-
 

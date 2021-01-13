@@ -45,3 +45,23 @@ void encrypt_rowtransposition(char* plain_text, char* cipher_text, char* key) {
 
     cipher_text[final_length] = 0;
 }
+
+void decrypt_rowtransposition(char* cipher_text, char* plain_text, char* key) {
+    size_t message_length = strlen(cipher_text);
+    size_t key_length = strlen(key);
+    size_t step_size = message_length / key_length;
+    int p[key_length];
+    int ip[key_length];
+    generate_permutations(key, p, ip);
+
+    int index = 0;
+
+    for (int i = 0; i < step_size; i++) {
+        for (int j = 0; j < key_length; j++) {
+            plain_text[index] = cipher_text[(p[j] - 1) * step_size + i];
+            index++;
+        }
+    }
+
+    plain_text[message_length] = 0;
+}

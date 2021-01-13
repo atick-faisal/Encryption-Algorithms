@@ -65,8 +65,8 @@ int main() {
     printf("PLAIN TEXT : %s\nKEY        : %s\n", plain_text_rt, key_rt);
     encrypt_rowtransposition(plain_text_rt, cipher_text_rt, key_rt);
     printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_rt);
-//    decrypt_vignere(cipher_text_vignere, plain_text_vignere, key_vignere);
-//    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_vignere);
+    decrypt_rowtransposition(cipher_text_rt, plain_text_rt, key_rt);
+    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_rt);
 
 
     return 0;
