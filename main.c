@@ -54,8 +54,8 @@ int main() {
     printf("PLAIN TEXT : %s\n", plain_text_railfence);
     encrypt_railfence(plain_text_railfence, cipher_text_railfence);
     printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_railfence);
-//    decrypt_autokey(cipher_text_autokey, plain_text_autokey, key_autokey);
-//    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_autokey);
+    decrypt_railfence(cipher_text_railfence, plain_text_railfence);
+    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_railfence);
 
     return 0;
 }
