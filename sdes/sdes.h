@@ -1,0 +1,8 @@
+//
+// Created by andromeda on 1/14/21.
+//
+
+#ifndef ENCRYPTION_ALGORITHMS_SDES_H
+#define ENCRYPTION_ALGORITHMS_SDES_H
+
+#endif //ENCRYPTION_ALGORITHMS_SDES_H

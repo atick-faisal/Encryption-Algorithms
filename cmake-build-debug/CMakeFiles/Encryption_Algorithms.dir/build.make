@@ -181,6 +181,32 @@ CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andromeda/Java/Encryption-Algorithms/sdes/sdes_util.c -o CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.s
 
+CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o: CMakeFiles/Encryption_Algorithms.dir/flags.make
+CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o: ../sdes/feistel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andromeda/Java/Encryption-Algorithms/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o   -c /home/andromeda/Java/Encryption-Algorithms/sdes/feistel.c
+
+CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andromeda/Java/Encryption-Algorithms/sdes/feistel.c > CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.i
+
+CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andromeda/Java/Encryption-Algorithms/sdes/feistel.c -o CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.s
+
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o: CMakeFiles/Encryption_Algorithms.dir/flags.make
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o: ../sdes/sdes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andromeda/Java/Encryption-Algorithms/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o   -c /home/andromeda/Java/Encryption-Algorithms/sdes/sdes.c
+
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andromeda/Java/Encryption-Algorithms/sdes/sdes.c > CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.i
+
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andromeda/Java/Encryption-Algorithms/sdes/sdes.c -o CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.s
+
 # Object files for target Encryption_Algorithms
 Encryption_Algorithms_OBJECTS = \
 "CMakeFiles/Encryption_Algorithms.dir/main.c.o" \
@@ -190,7 +216,9 @@ Encryption_Algorithms_OBJECTS = \
 "CMakeFiles/Encryption_Algorithms.dir/substitution/autokey.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/transposition/railfence.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/transposition/rowtransposition.c.o" \
-"CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.o"
+"CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.o" \
+"CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o" \
+"CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o"
 
 # External object files for target Encryption_Algorithms
 Encryption_Algorithms_EXTERNAL_OBJECTS =
@@ -203,9 +231,11 @@ Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/substitution/autokey
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/transposition/railfence.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/transposition/rowtransposition.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.o
+Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o
+Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/build.make
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andromeda/Java/Encryption-Algorithms/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable Encryption_Algorithms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andromeda/Java/Encryption-Algorithms/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable Encryption_Algorithms"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Encryption_Algorithms.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

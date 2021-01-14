@@ -1,6 +1,7 @@
 #include "config.h"
 #include "sdes_util.h"
 
+
 int index_of(const int* arr, int element, size_t size) {
     for (size_t i = 0; i < size; i++) {
         if (arr[i] == element) return i;

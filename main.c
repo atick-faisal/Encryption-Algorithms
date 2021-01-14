@@ -5,7 +5,7 @@
 #include "substitution/autokey.h"
 #include "transposition/railfence.h"
 #include "transposition/rowtransposition.h"
-#include "sdes/sdes_util.h"
+
 
 void print_binary(int x, int size) {
     printf("0b");

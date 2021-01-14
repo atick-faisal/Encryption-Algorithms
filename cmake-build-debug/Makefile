@@ -170,6 +170,60 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/main.c.s
 .PHONY : main.c.s
 
+sdes/feistel.o: sdes/feistel.c.o
+
+.PHONY : sdes/feistel.o
+
+# target to build an object file
+sdes/feistel.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o
+.PHONY : sdes/feistel.c.o
+
+sdes/feistel.i: sdes/feistel.c.i
+
+.PHONY : sdes/feistel.i
+
+# target to preprocess a source file
+sdes/feistel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.i
+.PHONY : sdes/feistel.c.i
+
+sdes/feistel.s: sdes/feistel.c.s
+
+.PHONY : sdes/feistel.s
+
+# target to generate assembly for a file
+sdes/feistel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.s
+.PHONY : sdes/feistel.c.s
+
+sdes/sdes.o: sdes/sdes.c.o
+
+.PHONY : sdes/sdes.o
+
+# target to build an object file
+sdes/sdes.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o
+.PHONY : sdes/sdes.c.o
+
+sdes/sdes.i: sdes/sdes.c.i
+
+.PHONY : sdes/sdes.i
+
+# target to preprocess a source file
+sdes/sdes.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.i
+.PHONY : sdes/sdes.c.i
+
+sdes/sdes.s: sdes/sdes.c.s
+
+.PHONY : sdes/sdes.s
+
+# target to generate assembly for a file
+sdes/sdes.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.s
+.PHONY : sdes/sdes.c.s
+
 sdes/sdes_util.o: sdes/sdes_util.c.o
 
 .PHONY : sdes/sdes_util.o
@@ -371,6 +425,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sdes/feistel.o"
+	@echo "... sdes/feistel.i"
+	@echo "... sdes/feistel.s"
+	@echo "... sdes/sdes.o"
+	@echo "... sdes/sdes.i"
+	@echo "... sdes/sdes.s"
 	@echo "... sdes/sdes_util.o"
 	@echo "... sdes/sdes_util.i"
 	@echo "... sdes/sdes_util.s"
