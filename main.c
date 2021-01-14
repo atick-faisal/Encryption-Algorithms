@@ -68,6 +68,8 @@ int main() {
     decrypt_rowtransposition(cipher_text_rt, plain_text_rt, key_rt);
     printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_rt);
 
+    printf("%d", IP[0]);
+
 
     return 0;
 }
