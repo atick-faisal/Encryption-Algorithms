@@ -9,6 +9,10 @@ CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../substitution/vignere.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../transposition/railfence.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../transposition/rowtransposition.h
 
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.o: ../sdes/config.h
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.o: ../sdes/sdes_util.c
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.o: ../sdes/sdes_util.h
+
 CMakeFiles/Encryption_Algorithms.dir/substitution/autokey.c.o: ../substitution/autokey.c
 CMakeFiles/Encryption_Algorithms.dir/substitution/autokey.c.o: ../substitution/autokey.h
 CMakeFiles/Encryption_Algorithms.dir/substitution/autokey.c.o: ../substitution/substitution.h

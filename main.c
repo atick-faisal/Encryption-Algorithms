@@ -6,6 +6,7 @@
 #include "transposition/railfence.h"
 #include "transposition/rowtransposition.h"
 
+
 int main() {
     printf("\n--------------------- CAESAR CIPHER ----------------------\n");
     char plain_text_caesar[] = "ENTANGLEMENT";
@@ -68,7 +69,6 @@ int main() {
     decrypt_rowtransposition(cipher_text_rt, plain_text_rt, key_rt);
     printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_rt);
 
-    printf("%d", IP[0]);
 
 
     return 0;

@@ -82,6 +82,12 @@
 		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/sdes/config.h">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
+		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/sdes/sdes_util.c">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
+		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/sdes/sdes_util.h">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
 		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/substitution/autokey.c">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
