@@ -92,6 +92,16 @@ int main() {
     plain_byte_sdes = decrypt_byte_sdes(encrypted_byte, key_sdes);
     printf("DECRYPTION -> PLAIN TEXT  : ");
     print_binary(plain_byte_sdes, 8);
+    ////////////////////////////////////////////////////////////////////////////////
+    char plain_text_sdes[] = "ANDROMEDA";
+    char cipher_text_sdes[50];
+    printf("\nPLAIN TEXT : %s\n", plain_text_sdes);
+    printf("KEY        : ");
+    print_binary(key_sdes, 10);
+    encrypt_sdes(plain_text_sdes, cipher_text_sdes, key_sdes);
+    printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_sdes);
+    decrypt_sdes(cipher_text_sdes, plain_text_sdes, key_sdes);
+    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_sdes);
 
 
     return 0;
