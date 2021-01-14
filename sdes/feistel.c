@@ -2,6 +2,7 @@
 #include "feistel.h"
 
 const int EP[EP_LENGTH] = {4, 1, 2, 3, 2, 3, 4, 1};
+const int P4[P4_LENGTH] = {2, 4, 3, 1};
 
 const int S0[4][4] = {
         {0b01, 0b00, 0b11, 0b10},
@@ -57,7 +58,7 @@ int apply_feistel(int x, int key) {
     int ep = expand_permutation(lsb, EP);
     int temp1 = ep ^ key;
     int temp2 = apply_s_boxes(temp1);
-    int p4 = permutation_p4(temp2);
+    int p4 = permutation_p4(temp2, P4);
     int new_msb = msb ^ p4;
     return (new_msb << 4) | lsb;
 }

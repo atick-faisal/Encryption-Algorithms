@@ -100,6 +100,12 @@
 		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/sdes/sdes_util.h">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
+		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/sdes/subkey.c">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
+		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/sdes/subkey.h">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
 		<Unit filename="/home/andromeda/Java/Encryption-Algorithms/substitution/autokey.c">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>

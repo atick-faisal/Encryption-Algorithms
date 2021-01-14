@@ -251,6 +251,33 @@ sdes/sdes_util.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.s
 .PHONY : sdes/sdes_util.c.s
 
+sdes/subkey.o: sdes/subkey.c.o
+
+.PHONY : sdes/subkey.o
+
+# target to build an object file
+sdes/subkey.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/subkey.c.o
+.PHONY : sdes/subkey.c.o
+
+sdes/subkey.i: sdes/subkey.c.i
+
+.PHONY : sdes/subkey.i
+
+# target to preprocess a source file
+sdes/subkey.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/subkey.c.i
+.PHONY : sdes/subkey.c.i
+
+sdes/subkey.s: sdes/subkey.c.s
+
+.PHONY : sdes/subkey.s
+
+# target to generate assembly for a file
+sdes/subkey.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/subkey.c.s
+.PHONY : sdes/subkey.c.s
+
 substitution/autokey.o: substitution/autokey.c.o
 
 .PHONY : substitution/autokey.o
@@ -434,6 +461,9 @@ help:
 	@echo "... sdes/sdes_util.o"
 	@echo "... sdes/sdes_util.i"
 	@echo "... sdes/sdes_util.s"
+	@echo "... sdes/subkey.o"
+	@echo "... sdes/subkey.i"
+	@echo "... sdes/subkey.s"
 	@echo "... substitution/autokey.o"
 	@echo "... substitution/autokey.i"
 	@echo "... substitution/autokey.s"
