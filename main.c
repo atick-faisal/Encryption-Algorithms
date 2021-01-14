@@ -5,7 +5,16 @@
 #include "substitution/autokey.h"
 #include "transposition/railfence.h"
 #include "transposition/rowtransposition.h"
+#include "sdes/sdes_util.h"
 
+void print_binary(int x, int size) {
+    printf("0b");
+    for (int i = size - 1; i >= 0; i--) {
+        unsigned char bit = (x >> i) & 1;
+        printf("%u", bit);
+    }
+    printf("\n");
+}
 
 int main() {
     printf("\n--------------------- CAESAR CIPHER ----------------------\n");
@@ -68,8 +77,6 @@ int main() {
     printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_rt);
     decrypt_rowtransposition(cipher_text_rt, plain_text_rt, key_rt);
     printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_rt);
-
-
 
     return 0;
 }

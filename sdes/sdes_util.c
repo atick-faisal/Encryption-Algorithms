@@ -36,7 +36,7 @@ int inverse_initial_permutation(int x, const int* inverse_ip) {
 
 int switch_order(int x, size_t size) {
     size_t shift_amount = size / 2;
-    int msb = x << (shift_amount);
+    int msb = x >> (shift_amount);
     int lsb = x & ((1 << shift_amount) - 1);
     return (lsb << shift_amount) | msb;
 }

@@ -21,6 +21,10 @@ transposition/railfence.h
 /home/andromeda/Java/Encryption-Algorithms/transposition/railfence.h
 transposition/rowtransposition.h
 /home/andromeda/Java/Encryption-Algorithms/transposition/rowtransposition.h
+sdes/sdes_util.h
+/home/andromeda/Java/Encryption-Algorithms/sdes/sdes_util.h
+
+/home/andromeda/Java/Encryption-Algorithms/sdes/sdes_util.h
 
 /home/andromeda/Java/Encryption-Algorithms/substitution/autokey.h
 
