@@ -9,9 +9,9 @@ int index_of(const int* arr, int element, size_t size) {
     return -1;
 }
 
-void generate_inverse_ip(int* ip, int* inverse_ip) {
-    for (int i = 1; i <= IP_LENGTH; i++) {
-        inverse_ip[i] = index_of(ip, i, IP_LENGTH);
+void generate_inverse_ip(const int* ip, int* inverse_ip) {
+    for (int i = 0; i < IP_LENGTH; i++) {
+        inverse_ip[i] = index_of(ip, (i + 1), IP_LENGTH) + 1;
     }
 }
 

@@ -24,7 +24,7 @@ int permutation_p8(int x, const int* p8) {
     return result;
 }
 
-int circular_left_shift(int x, int amount, const int numBits) {
+int circular_left_shift(int x, int amount, int numBits) {
     int mask = (1 << numBits) - 1;
     return ((x << amount) | (x >> (numBits - amount))) & mask;
 }

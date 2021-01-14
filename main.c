@@ -5,6 +5,7 @@
 #include "substitution/autokey.h"
 #include "transposition/railfence.h"
 #include "transposition/rowtransposition.h"
+#include "sdes/sdes.h"
 
 
 void print_binary(int x, int size) {
@@ -77,6 +78,20 @@ int main() {
     printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_rt);
     decrypt_rowtransposition(cipher_text_rt, plain_text_rt, key_rt);
     printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_rt);
+
+    printf("\n------------------- SDES ENCRYPTION -------------------\n");
+    int plain_byte_sdes = 0b01110010;
+    int key_sdes = 0b1010000010;
+    printf("PLAIN BYTE : ");
+    print_binary(plain_byte_sdes, 8);
+    printf("KEY        : ");
+    print_binary(key_sdes, 10);
+    int encrypted_byte = encrypt_byte_sdes(plain_byte_sdes, key_sdes);
+    printf("ENCRYPTION -> CIPHER BYTE : ");
+    print_binary(encrypted_byte, 8);
+//    decrypt_rowtransposition(cipher_text_rt, plain_text_rt, key_rt);
+//    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_rt);
+
 
     return 0;
 }
