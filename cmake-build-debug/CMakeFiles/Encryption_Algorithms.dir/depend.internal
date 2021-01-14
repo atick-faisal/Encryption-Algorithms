@@ -3,6 +3,7 @@
 
 CMakeFiles/Encryption_Algorithms.dir/main.c.o
  /home/andromeda/Java/Encryption-Algorithms/main.c
+ /home/andromeda/Java/Encryption-Algorithms/sdes/sdes.h
  /home/andromeda/Java/Encryption-Algorithms/substitution/autokey.h
  /home/andromeda/Java/Encryption-Algorithms/substitution/caesar.h
  /home/andromeda/Java/Encryption-Algorithms/substitution/monoalphabetic.h
@@ -15,12 +16,19 @@ CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o
  /home/andromeda/Java/Encryption-Algorithms/sdes/feistel.h
 CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o
  /home/andromeda/Java/Encryption-Algorithms/sdes/config.h
+ /home/andromeda/Java/Encryption-Algorithms/sdes/feistel.h
  /home/andromeda/Java/Encryption-Algorithms/sdes/sdes.c
  /home/andromeda/Java/Encryption-Algorithms/sdes/sdes.h
+ /home/andromeda/Java/Encryption-Algorithms/sdes/sdes_util.h
+ /home/andromeda/Java/Encryption-Algorithms/sdes/subkey.h
 CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.o
  /home/andromeda/Java/Encryption-Algorithms/sdes/config.h
  /home/andromeda/Java/Encryption-Algorithms/sdes/sdes_util.c
  /home/andromeda/Java/Encryption-Algorithms/sdes/sdes_util.h
+CMakeFiles/Encryption_Algorithms.dir/sdes/subkey.c.o
+ /home/andromeda/Java/Encryption-Algorithms/sdes/config.h
+ /home/andromeda/Java/Encryption-Algorithms/sdes/subkey.c
+ /home/andromeda/Java/Encryption-Algorithms/sdes/subkey.h
 CMakeFiles/Encryption_Algorithms.dir/substitution/autokey.c.o
  /home/andromeda/Java/Encryption-Algorithms/substitution/autokey.c
  /home/andromeda/Java/Encryption-Algorithms/substitution/autokey.h

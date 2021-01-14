@@ -6,33 +6,59 @@
 
 #IncludeRegexTransform: 
 
+/home/andromeda/Java/Encryption-Algorithms/main.c
+stdio.h
+-
+substitution/caesar.h
+/home/andromeda/Java/Encryption-Algorithms/substitution/caesar.h
+substitution/monoalphabetic.h
+/home/andromeda/Java/Encryption-Algorithms/substitution/monoalphabetic.h
+substitution/vignere.h
+/home/andromeda/Java/Encryption-Algorithms/substitution/vignere.h
+substitution/autokey.h
+/home/andromeda/Java/Encryption-Algorithms/substitution/autokey.h
+transposition/railfence.h
+/home/andromeda/Java/Encryption-Algorithms/transposition/railfence.h
+transposition/rowtransposition.h
+/home/andromeda/Java/Encryption-Algorithms/transposition/rowtransposition.h
+sdes/sdes.h
+/home/andromeda/Java/Encryption-Algorithms/sdes/sdes.h
+
 /home/andromeda/Java/Encryption-Algorithms/sdes/config.h
 ctype.h
 -
 string.h
 -
 
-/home/andromeda/Java/Encryption-Algorithms/sdes/feistel.c
-config.h
-/home/andromeda/Java/Encryption-Algorithms/sdes/config.h
-feistel.h
-/home/andromeda/Java/Encryption-Algorithms/sdes/feistel.h
-
 /home/andromeda/Java/Encryption-Algorithms/sdes/feistel.h
 
 /home/andromeda/Java/Encryption-Algorithms/sdes/sdes.c
 config.h
 /home/andromeda/Java/Encryption-Algorithms/sdes/config.h
+sdes_util.h
+/home/andromeda/Java/Encryption-Algorithms/sdes/sdes_util.h
+subkey.h
+/home/andromeda/Java/Encryption-Algorithms/sdes/subkey.h
+feistel.h
+/home/andromeda/Java/Encryption-Algorithms/sdes/feistel.h
 sdes.h
 /home/andromeda/Java/Encryption-Algorithms/sdes/sdes.h
 
 /home/andromeda/Java/Encryption-Algorithms/sdes/sdes.h
 
-/home/andromeda/Java/Encryption-Algorithms/sdes/sdes_util.c
-config.h
-/home/andromeda/Java/Encryption-Algorithms/sdes/config.h
-sdes_util.h
 /home/andromeda/Java/Encryption-Algorithms/sdes/sdes_util.h
 
-/home/andromeda/Java/Encryption-Algorithms/sdes/sdes_util.h
+/home/andromeda/Java/Encryption-Algorithms/sdes/subkey.h
+
+/home/andromeda/Java/Encryption-Algorithms/substitution/autokey.h
+
+/home/andromeda/Java/Encryption-Algorithms/substitution/caesar.h
+
+/home/andromeda/Java/Encryption-Algorithms/substitution/monoalphabetic.h
+
+/home/andromeda/Java/Encryption-Algorithms/substitution/vignere.h
+
+/home/andromeda/Java/Encryption-Algorithms/transposition/railfence.h
+
+/home/andromeda/Java/Encryption-Algorithms/transposition/rowtransposition.h
 

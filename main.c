@@ -89,8 +89,9 @@ int main() {
     int encrypted_byte = encrypt_byte_sdes(plain_byte_sdes, key_sdes);
     printf("ENCRYPTION -> CIPHER BYTE : ");
     print_binary(encrypted_byte, 8);
-//    decrypt_rowtransposition(cipher_text_rt, plain_text_rt, key_rt);
-//    printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_rt);
+    plain_byte_sdes = decrypt_byte_sdes(encrypted_byte, key_sdes);
+    printf("DECRYPTION -> PLAIN TEXT  : ");
+    print_binary(plain_byte_sdes, 8);
 
 
     return 0;
