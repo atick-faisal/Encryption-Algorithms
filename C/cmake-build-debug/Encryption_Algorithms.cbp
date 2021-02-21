@@ -76,6 +76,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/keygen.c">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
+		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/keygen.h">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/util.c">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
