@@ -8,6 +8,8 @@
 #include "sdes/sdes.h"
 #include "des/keygen.h"
 #include "des/fiestel.h"
+#include "des/util.h"
+#include "des/des.h"
 
 
 void print_binary(int x, int size) {
@@ -15,14 +17,6 @@ void print_binary(int x, int size) {
     for (int i = size - 1; i >= 0; i--) {
         unsigned char bit = (x >> i) & 1;
         printf("%u", bit);
-    }
-    printf("\n");
-}
-
-void print_hex(unsigned long x) {
-    for (int i = 1; i <= 8; i++) {
-        unsigned long octet = (x >> ((8 - i) * 8)) & 0xFFUL;
-        printf("%02lX ", octet);
     }
     printf("\n");
 }
@@ -115,15 +109,7 @@ int main() {
 
     unsigned long plain_text_des = 0x123456ABCD132536UL;
     unsigned long key_des = 0xAABB09182736CCDDUL;
-    unsigned long keys[16];
-    print_hex(key_des);
-    printf("\n");
-    generate_keys(key_des, keys);
-    for (int i = 0; i < 16; i++) {
-        unsigned long block = apply_fiestel_des(plain_text_des, keys[i]);
-        print_hex(block);
-    }
-
+    unsigned long cipher_block = encrypt_block_des(plain_text_des, key_des);
 
     return 0;
 }

@@ -6,11 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.c
+/home/andromeda/Embedded/Encryption-Algorithms/C/des/des.c
+des.h
+/home/andromeda/Embedded/Encryption-Algorithms/C/des/des.h
+
+/home/andromeda/Embedded/Encryption-Algorithms/C/des/des.h
+stdlib.h
+-
 fiestel.h
 /home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.h
+keygen.h
+/home/andromeda/Embedded/Encryption-Algorithms/C/des/keygen.h
+util.h
+/home/andromeda/Embedded/Encryption-Algorithms/C/des/util.h
 
 /home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.h
 stdio.h
+-
+
+/home/andromeda/Embedded/Encryption-Algorithms/C/des/keygen.h
+stdlib.h
+-
+
+/home/andromeda/Embedded/Encryption-Algorithms/C/des/util.h
+stdio.h
+-
+stdlib.h
 -
 

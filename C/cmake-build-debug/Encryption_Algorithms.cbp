@@ -76,6 +76,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/des.c">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
+		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/des.h">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.c">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
