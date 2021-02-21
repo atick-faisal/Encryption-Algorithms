@@ -106,11 +106,17 @@ int main() {
     printf("\nKEY        : ");
     print_hex(key_des, 8);
     printf("\n\n    ============================== ENCRYPTION ROUNDS ==============================\n");
-    unsigned long cipher_block = encrypt_block_des(plain_text_des, key_des);
+    unsigned long cipher_text_des = encrypt_block_des(plain_text_des, key_des);
     printf("    ==================================== DONE =====================================\n\n");
     printf("ENCRYPTION -> CIPHER BLOCK : ");
-    print_hex(cipher_block, 8);
+    print_hex(cipher_text_des, 8);
 
+    printf("\n\n    ============================== DECRYPTION ROUNDS ==============================\n");
+    plain_text_des = decrypt_block_des(cipher_text_des, key_des);
+    printf("    ==================================== DONE =====================================\n\n");
+    printf("DECRYPTION -> PLAIN TEXT BLOCK : ");
+    print_hex(plain_text_des, 8);
+    printf("\n\n\n");
 
     return 0;
 }

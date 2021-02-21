@@ -7,5 +7,6 @@
 #include "des_util.h"
 
 unsigned long encrypt_block_des(unsigned long block, unsigned long key);
+unsigned long decrypt_block_des(unsigned long block, unsigned long key);
 
 #endif //ENCRYPTION_ALGORITHMS_DES_H
