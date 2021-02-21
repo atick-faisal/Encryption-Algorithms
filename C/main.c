@@ -17,6 +17,14 @@ void print_binary(int x, int size) {
     printf("\n");
 }
 
+void print_hex(unsigned long x) {
+    for (int i = 1; i <= 8; i++) {
+        unsigned long octet = (x >> ((8 - i) * 8)) & 0xFFUL;
+        printf("%02lX ", octet);
+    }
+    printf("\n");
+}
+
 int main() {
     printf("\n--------------------- CAESAR CIPHER ----------------------\n");
     char plain_text_caesar[] = "ENTANGLEMENT";
