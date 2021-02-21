@@ -7,8 +7,6 @@
 #include "transposition/rowtransposition.h"
 #include "sdes/sdes.h"
 #include "sdes/sdes_util.h"
-#include "des/keygen.h"
-#include "des/fiestel.h"
 #include "des/des_util.h"
 #include "des/des.h"
 
@@ -105,15 +103,15 @@ int main() {
     print_hex(plain_text_des, 8);
     printf("\nKEY        : ");
     print_hex(key_des, 8);
-    printf("\n\n    ============================== ENCRYPTION ROUNDS ==============================\n");
+    printf("\n\n    ================================ ENCRYPTION ROUNDS ================================\n");
     unsigned long cipher_text_des = encrypt_block_des(plain_text_des, key_des);
-    printf("    ==================================== DONE =====================================\n\n");
+    printf("    ====================================== DONE =======================================\n\n");
     printf("ENCRYPTION -> CIPHER BLOCK : ");
     print_hex(cipher_text_des, 8);
 
-    printf("\n\n    ============================== DECRYPTION ROUNDS ==============================\n");
+    printf("\n\n    ================================ DECRYPTION ROUNDS ================================\n");
     plain_text_des = decrypt_block_des(cipher_text_des, key_des);
-    printf("    ==================================== DONE =====================================\n\n");
+    printf("    ====================================== DONE =======================================\n\n");
     printf("DECRYPTION -> PLAIN TEXT BLOCK : ");
     print_hex(plain_text_des, 8);
     printf("\n\n\n");
