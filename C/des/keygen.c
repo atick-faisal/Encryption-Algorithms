@@ -5,7 +5,7 @@
 #define BITS_PC2 48
 #define BITS_SHIFT 28
 
-const int PC1[BITS_PC1] = {
+static const int PC1[BITS_PC1] = {
         57, 49, 41, 33, 25,
         17, 9, 1, 58, 50, 42, 34, 26,
         18, 10, 2, 59, 51, 43, 35, 27,
@@ -16,7 +16,7 @@ const int PC1[BITS_PC1] = {
         20, 12, 4
 };
 
-const int PC2[BITS_PC2] = {
+static const int PC2[BITS_PC2] = {
         14, 17, 11, 24, 1, 5, 3,
         28, 15, 6, 21, 10, 23, 19, 12,
         4, 26, 8, 16, 7, 27, 20, 13, 2,
@@ -25,7 +25,7 @@ const int PC2[BITS_PC2] = {
         34, 53, 46, 42, 50, 36, 29, 32
 };
 
-const int SHIFTS[NUMBER_OF_ROUNDS] = {
+static const int SHIFTS[NUMBER_OF_ROUNDS] = {
         1, 1, 2, 2, 2, 2, 2, 2,
         1, 2, 2, 2, 2, 2, 2, 1
 };

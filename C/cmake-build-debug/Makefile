@@ -143,6 +143,33 @@ Encryption_Algorithms/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/build
 .PHONY : Encryption_Algorithms/fast
 
+des/fiestel.o: des/fiestel.c.o
+
+.PHONY : des/fiestel.o
+
+# target to build an object file
+des/fiestel.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o
+.PHONY : des/fiestel.c.o
+
+des/fiestel.i: des/fiestel.c.i
+
+.PHONY : des/fiestel.i
+
+# target to preprocess a source file
+des/fiestel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.i
+.PHONY : des/fiestel.c.i
+
+des/fiestel.s: des/fiestel.c.s
+
+.PHONY : des/fiestel.s
+
+# target to generate assembly for a file
+des/fiestel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.s
+.PHONY : des/fiestel.c.s
+
 des/keygen.o: des/keygen.c.o
 
 .PHONY : des/keygen.o
@@ -503,6 +530,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Encryption_Algorithms"
+	@echo "... des/fiestel.o"
+	@echo "... des/fiestel.i"
+	@echo "... des/fiestel.s"
 	@echo "... des/keygen.o"
 	@echo "... des/keygen.i"
 	@echo "... des/keygen.s"
