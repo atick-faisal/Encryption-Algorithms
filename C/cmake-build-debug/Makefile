@@ -170,6 +170,33 @@ des/des.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/des.c.s
 .PHONY : des/des.c.s
 
+des/des_util.o: des/des_util.c.o
+
+.PHONY : des/des_util.o
+
+# target to build an object file
+des/des_util.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o
+.PHONY : des/des_util.c.o
+
+des/des_util.i: des/des_util.c.i
+
+.PHONY : des/des_util.i
+
+# target to preprocess a source file
+des/des_util.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.i
+.PHONY : des/des_util.c.i
+
+des/des_util.s: des/des_util.c.s
+
+.PHONY : des/des_util.s
+
+# target to generate assembly for a file
+des/des_util.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.s
+.PHONY : des/des_util.c.s
+
 des/fiestel.o: des/fiestel.c.o
 
 .PHONY : des/fiestel.o
@@ -223,33 +250,6 @@ des/keygen.s: des/keygen.c.s
 des/keygen.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.s
 .PHONY : des/keygen.c.s
-
-des/util.o: des/util.c.o
-
-.PHONY : des/util.o
-
-# target to build an object file
-des/util.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/util.c.o
-.PHONY : des/util.c.o
-
-des/util.i: des/util.c.i
-
-.PHONY : des/util.i
-
-# target to preprocess a source file
-des/util.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/util.c.i
-.PHONY : des/util.c.i
-
-des/util.s: des/util.c.s
-
-.PHONY : des/util.s
-
-# target to generate assembly for a file
-des/util.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/util.c.s
-.PHONY : des/util.c.s
 
 main.o: main.c.o
 
@@ -560,15 +560,15 @@ help:
 	@echo "... des/des.o"
 	@echo "... des/des.i"
 	@echo "... des/des.s"
+	@echo "... des/des_util.o"
+	@echo "... des/des_util.i"
+	@echo "... des/des_util.s"
 	@echo "... des/fiestel.o"
 	@echo "... des/fiestel.i"
 	@echo "... des/fiestel.s"
 	@echo "... des/keygen.o"
 	@echo "... des/keygen.i"
 	@echo "... des/keygen.s"
-	@echo "... des/util.o"
-	@echo "... des/util.i"
-	@echo "... des/util.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -6,20 +6,11 @@
 #include "transposition/railfence.h"
 #include "transposition/rowtransposition.h"
 #include "sdes/sdes.h"
+#include "sdes/sdes_util.h"
 #include "des/keygen.h"
 #include "des/fiestel.h"
-#include "des/util.h"
+#include "des/des_util.h"
 #include "des/des.h"
-
-
-void print_binary(int x, int size) {
-    printf("0b");
-    for (int i = size - 1; i >= 0; i--) {
-        unsigned char bit = (x >> i) & 1;
-        printf("%u", bit);
-    }
-    printf("\n");
-}
 
 int main() {
     printf("\n--------------------- CAESAR CIPHER ----------------------\n");
@@ -107,9 +98,19 @@ int main() {
     decrypt_sdes(cipher_text_sdes, plain_text_sdes, key_sdes);
     printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_sdes);
 
+    printf("\n------------------- DES ENCRYPTION -------------------\n");
     unsigned long plain_text_des = 0x123456ABCD132536UL;
     unsigned long key_des = 0xAABB09182736CCDDUL;
+    printf("\nPLAIN TEXT : ");
+    print_hex(plain_text_des, 8);
+    printf("\nKEY        : ");
+    print_hex(key_des, 8);
+    printf("\n\n    ============================== ENCRYPTION ROUNDS ==============================\n");
     unsigned long cipher_block = encrypt_block_des(plain_text_des, key_des);
+    printf("    ==================================== DONE =====================================\n\n");
+    printf("ENCRYPTION -> CIPHER BLOCK : ");
+    print_hex(cipher_block, 8);
+
 
     return 0;
 }

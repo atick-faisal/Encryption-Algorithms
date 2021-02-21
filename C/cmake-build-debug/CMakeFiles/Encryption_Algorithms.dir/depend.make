@@ -3,9 +3,12 @@
 
 CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: ../des/des.c
 CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: ../des/des.h
+CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: ../des/des_util.h
 CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: ../des/fiestel.h
 CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: ../des/keygen.h
-CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: ../des/util.h
+
+CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o: ../des/des_util.c
+CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o: ../des/des_util.h
 
 CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o: ../des/fiestel.c
 CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o: ../des/fiestel.h
@@ -13,15 +16,13 @@ CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o: ../des/fiestel.h
 CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.o: ../des/keygen.c
 CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.o: ../des/keygen.h
 
-CMakeFiles/Encryption_Algorithms.dir/des/util.c.o: ../des/util.c
-CMakeFiles/Encryption_Algorithms.dir/des/util.c.o: ../des/util.h
-
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../des/des.h
+CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../des/des_util.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../des/fiestel.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../des/keygen.h
-CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../des/util.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../main.c
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../sdes/sdes.h
+CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../sdes/sdes_util.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../substitution/autokey.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../substitution/caesar.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../substitution/monoalphabetic.h

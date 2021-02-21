@@ -1,8 +1,10 @@
-#ifndef ENCRYPTION_ALGORITHMS_UTIL_H
-#define ENCRYPTION_ALGORITHMS_UTIL_H
+#ifndef ENCRYPTION_ALGORITHMS_DES_UTIL_H
+#define ENCRYPTION_ALGORITHMS_DES_UTIL_H
 
 #include <stdio.h>
 #include <stdlib.h>
+
+#define BITS_IP 64
 
 static const int IP[64] = {
         58, 50, 42, 34, 26, 18, 10, 2,
@@ -29,6 +31,6 @@ static const int INV_IP[64] = {
 unsigned long initial_permutation_des(unsigned long x);
 unsigned long inverse_permutation_des(unsigned long x);
 unsigned long switch_halves_des(unsigned long x);
-void print_hex(unsigned long x);
+void print_hex(unsigned long x, int num_bytes);
 
-#endif //ENCRYPTION_ALGORITHMS_UTIL_H
+#endif //ENCRYPTION_ALGORITHMS_DES_UTIL_H

@@ -82,6 +82,12 @@
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/des.h">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
+		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/des_util.c">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
+		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/des_util.h">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.c">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
@@ -92,12 +98,6 @@
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/keygen.h">
-			<Option target="Encryption_Algorithms"/>
-		</Unit>
-		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/util.c">
-			<Option target="Encryption_Algorithms"/>
-		</Unit>
-		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/util.h">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/main.c">

@@ -41,3 +41,12 @@ int switch_order(int x, size_t size) {
     int lsb = x & ((1 << shift_amount) - 1);
     return (lsb << shift_amount) | msb;
 }
+
+void print_binary(int x, int size) {
+    printf("0b");
+    for (int i = size - 1; i >= 0; i--) {
+        unsigned char bit = (x >> i) & 1;
+        printf("%u", bit);
+    }
+    printf("\n");
+}

@@ -10,9 +10,9 @@ unsigned long encrypt_block_des(unsigned long block, unsigned long key) {
             intermediate_block = switch_halves_des(intermediate_block);
         }
         printf("    [ %02d ] KEY : ", i);
-        print_hex(keys[i]);
+        print_hex(keys[i], 8);
         printf("    CIPHER BLOCK : ");
-        print_hex(intermediate_block);
+        print_hex(intermediate_block, 8);
         printf("\n");
     }
     return inverse_permutation_des(intermediate_block);

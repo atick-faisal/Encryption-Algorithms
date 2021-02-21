@@ -220,18 +220,18 @@ CMakeFiles/Encryption_Algorithms.dir/sdes/subkey.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Encryption_Algorithms.dir/sdes/subkey.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/subkey.c -o CMakeFiles/Encryption_Algorithms.dir/sdes/subkey.c.s
 
-CMakeFiles/Encryption_Algorithms.dir/des/util.c.o: CMakeFiles/Encryption_Algorithms.dir/flags.make
-CMakeFiles/Encryption_Algorithms.dir/des/util.c.o: ../des/util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andromeda/Embedded/Encryption-Algorithms/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Encryption_Algorithms.dir/des/util.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Encryption_Algorithms.dir/des/util.c.o   -c /home/andromeda/Embedded/Encryption-Algorithms/C/des/util.c
+CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o: CMakeFiles/Encryption_Algorithms.dir/flags.make
+CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o: ../des/des_util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andromeda/Embedded/Encryption-Algorithms/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o   -c /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_util.c
 
-CMakeFiles/Encryption_Algorithms.dir/des/util.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Encryption_Algorithms.dir/des/util.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andromeda/Embedded/Encryption-Algorithms/C/des/util.c > CMakeFiles/Encryption_Algorithms.dir/des/util.c.i
+CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_util.c > CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.i
 
-CMakeFiles/Encryption_Algorithms.dir/des/util.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Encryption_Algorithms.dir/des/util.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andromeda/Embedded/Encryption-Algorithms/C/des/util.c -o CMakeFiles/Encryption_Algorithms.dir/des/util.c.s
+CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_util.c -o CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.s
 
 CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.o: CMakeFiles/Encryption_Algorithms.dir/flags.make
 CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.o: ../des/keygen.c
@@ -285,7 +285,7 @@ Encryption_Algorithms_OBJECTS = \
 "CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/sdes/subkey.c.o" \
-"CMakeFiles/Encryption_Algorithms.dir/des/util.c.o" \
+"CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/des/des.c.o"
@@ -304,7 +304,7 @@ Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/sdes/subkey.c.o
-Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/des/util.c.o
+Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/des/des.c.o

@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "fiestel.h"
 #include "keygen.h"
-#include "util.h"
+#include "des_util.h"
 
 unsigned long encrypt_block_des(unsigned long block, unsigned long key);
 
