@@ -41,3 +41,9 @@ unsigned long inverse_permutation(unsigned long x) {
     }
     return result;
 }
+
+unsigned long switch_halves(unsigned long x) {
+    unsigned long msb = x >> 32;
+    unsigned long lsb = x & 0xFFFFFFFFUL;
+    return ((lsb << 32) | msb);
+}
