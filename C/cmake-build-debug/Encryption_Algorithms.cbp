@@ -82,16 +82,16 @@
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/des.h">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
+		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/des_feistel.c">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
+		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/des_feistel.h">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/des_util.c">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/des_util.h">
-			<Option target="Encryption_Algorithms"/>
-		</Unit>
-		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.c">
-			<Option target="Encryption_Algorithms"/>
-		</Unit>
-		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.h">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/des/keygen.c">
@@ -106,16 +106,16 @@
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/config.h">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
-		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/feistel.c">
-			<Option target="Encryption_Algorithms"/>
-		</Unit>
-		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/feistel.h">
-			<Option target="Encryption_Algorithms"/>
-		</Unit>
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes.c">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes.h">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
+		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_feistel.c">
+			<Option target="Encryption_Algorithms"/>
+		</Unit>
+		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_feistel.h">
 			<Option target="Encryption_Algorithms"/>
 		</Unit>
 		<Unit filename="/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_util.c">

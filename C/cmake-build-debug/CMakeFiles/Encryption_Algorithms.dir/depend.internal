@@ -4,22 +4,22 @@
 CMakeFiles/Encryption_Algorithms.dir/des/des.c.o
  /home/andromeda/Embedded/Encryption-Algorithms/C/des/des.c
  /home/andromeda/Embedded/Encryption-Algorithms/C/des/des.h
+ /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_feistel.h
  /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_util.h
- /home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.h
  /home/andromeda/Embedded/Encryption-Algorithms/C/des/keygen.h
+CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.o
+ /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_feistel.c
+ /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_feistel.h
 CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o
  /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_util.c
  /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_util.h
-CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o
- /home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.c
- /home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.h
 CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.o
  /home/andromeda/Embedded/Encryption-Algorithms/C/des/keygen.c
  /home/andromeda/Embedded/Encryption-Algorithms/C/des/keygen.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o
  /home/andromeda/Embedded/Encryption-Algorithms/C/des/des.h
+ /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_feistel.h
  /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_util.h
- /home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.h
  /home/andromeda/Embedded/Encryption-Algorithms/C/des/keygen.h
  /home/andromeda/Embedded/Encryption-Algorithms/C/main.c
  /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes.h
@@ -30,17 +30,17 @@ CMakeFiles/Encryption_Algorithms.dir/main.c.o
  /home/andromeda/Embedded/Encryption-Algorithms/C/substitution/vignere.h
  /home/andromeda/Embedded/Encryption-Algorithms/C/transposition/railfence.h
  /home/andromeda/Embedded/Encryption-Algorithms/C/transposition/rowtransposition.h
-CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o
- /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/config.h
- /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/feistel.c
- /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/feistel.h
 CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o
  /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/config.h
- /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/feistel.h
  /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes.c
  /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes.h
+ /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_feistel.h
  /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_util.h
  /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/subkey.h
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.o
+ /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/config.h
+ /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_feistel.c
+ /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_feistel.h
 CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.o
  /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/config.h
  /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_util.c

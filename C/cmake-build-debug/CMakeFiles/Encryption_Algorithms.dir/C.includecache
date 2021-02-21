@@ -6,24 +6,32 @@
 
 #IncludeRegexTransform: 
 
+/home/andromeda/Embedded/Encryption-Algorithms/C/des/des.c
+des.h
+/home/andromeda/Embedded/Encryption-Algorithms/C/des/des.h
+
 /home/andromeda/Embedded/Encryption-Algorithms/C/des/des.h
 stdlib.h
 -
-fiestel.h
-/home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.h
+des_feistel.h
+/home/andromeda/Embedded/Encryption-Algorithms/C/des/des_feistel.h
 keygen.h
 /home/andromeda/Embedded/Encryption-Algorithms/C/des/keygen.h
 des_util.h
 /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_util.h
 
+/home/andromeda/Embedded/Encryption-Algorithms/C/des/des_feistel.c
+des_feistel.h
+/home/andromeda/Embedded/Encryption-Algorithms/C/des/des_feistel.h
+
+/home/andromeda/Embedded/Encryption-Algorithms/C/des/des_feistel.h
+stdio.h
+-
+
 /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_util.h
 stdio.h
 -
 stdlib.h
--
-
-/home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.h
-stdio.h
 -
 
 /home/andromeda/Embedded/Encryption-Algorithms/C/des/keygen.h
@@ -54,11 +62,39 @@ des/des_util.h
 des/des.h
 /home/andromeda/Embedded/Encryption-Algorithms/C/des/des.h
 
+/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/config.h
+ctype.h
+-
+string.h
+-
+
+/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes.c
+config.h
+/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/config.h
+sdes_util.h
+/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_util.h
+subkey.h
+/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/subkey.h
+sdes_feistel.h
+/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_feistel.h
+sdes.h
 /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes.h
+
+/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes.h
+
+/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_feistel.c
+config.h
+/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/config.h
+sdes_feistel.h
+/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_feistel.h
+
+/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_feistel.h
 
 /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_util.h
 stdio.h
 -
+
+/home/andromeda/Embedded/Encryption-Algorithms/C/sdes/subkey.h
 
 /home/andromeda/Embedded/Encryption-Algorithms/C/substitution/autokey.h
 

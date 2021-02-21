@@ -170,6 +170,33 @@ des/des.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/des.c.s
 .PHONY : des/des.c.s
 
+des/des_feistel.o: des/des_feistel.c.o
+
+.PHONY : des/des_feistel.o
+
+# target to build an object file
+des/des_feistel.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.o
+.PHONY : des/des_feistel.c.o
+
+des/des_feistel.i: des/des_feistel.c.i
+
+.PHONY : des/des_feistel.i
+
+# target to preprocess a source file
+des/des_feistel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.i
+.PHONY : des/des_feistel.c.i
+
+des/des_feistel.s: des/des_feistel.c.s
+
+.PHONY : des/des_feistel.s
+
+# target to generate assembly for a file
+des/des_feistel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.s
+.PHONY : des/des_feistel.c.s
+
 des/des_util.o: des/des_util.c.o
 
 .PHONY : des/des_util.o
@@ -196,33 +223,6 @@ des/des_util.s: des/des_util.c.s
 des/des_util.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.s
 .PHONY : des/des_util.c.s
-
-des/fiestel.o: des/fiestel.c.o
-
-.PHONY : des/fiestel.o
-
-# target to build an object file
-des/fiestel.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o
-.PHONY : des/fiestel.c.o
-
-des/fiestel.i: des/fiestel.c.i
-
-.PHONY : des/fiestel.i
-
-# target to preprocess a source file
-des/fiestel.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.i
-.PHONY : des/fiestel.c.i
-
-des/fiestel.s: des/fiestel.c.s
-
-.PHONY : des/fiestel.s
-
-# target to generate assembly for a file
-des/fiestel.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.s
-.PHONY : des/fiestel.c.s
 
 des/keygen.o: des/keygen.c.o
 
@@ -278,33 +278,6 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/main.c.s
 .PHONY : main.c.s
 
-sdes/feistel.o: sdes/feistel.c.o
-
-.PHONY : sdes/feistel.o
-
-# target to build an object file
-sdes/feistel.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o
-.PHONY : sdes/feistel.c.o
-
-sdes/feistel.i: sdes/feistel.c.i
-
-.PHONY : sdes/feistel.i
-
-# target to preprocess a source file
-sdes/feistel.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.i
-.PHONY : sdes/feistel.c.i
-
-sdes/feistel.s: sdes/feistel.c.s
-
-.PHONY : sdes/feistel.s
-
-# target to generate assembly for a file
-sdes/feistel.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.s
-.PHONY : sdes/feistel.c.s
-
 sdes/sdes.o: sdes/sdes.c.o
 
 .PHONY : sdes/sdes.o
@@ -331,6 +304,33 @@ sdes/sdes.s: sdes/sdes.c.s
 sdes/sdes.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.s
 .PHONY : sdes/sdes.c.s
+
+sdes/sdes_feistel.o: sdes/sdes_feistel.c.o
+
+.PHONY : sdes/sdes_feistel.o
+
+# target to build an object file
+sdes/sdes_feistel.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.o
+.PHONY : sdes/sdes_feistel.c.o
+
+sdes/sdes_feistel.i: sdes/sdes_feistel.c.i
+
+.PHONY : sdes/sdes_feistel.i
+
+# target to preprocess a source file
+sdes/sdes_feistel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.i
+.PHONY : sdes/sdes_feistel.c.i
+
+sdes/sdes_feistel.s: sdes/sdes_feistel.c.s
+
+.PHONY : sdes/sdes_feistel.s
+
+# target to generate assembly for a file
+sdes/sdes_feistel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Encryption_Algorithms.dir/build.make CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.s
+.PHONY : sdes/sdes_feistel.c.s
 
 sdes/sdes_util.o: sdes/sdes_util.c.o
 
@@ -560,24 +560,24 @@ help:
 	@echo "... des/des.o"
 	@echo "... des/des.i"
 	@echo "... des/des.s"
+	@echo "... des/des_feistel.o"
+	@echo "... des/des_feistel.i"
+	@echo "... des/des_feistel.s"
 	@echo "... des/des_util.o"
 	@echo "... des/des_util.i"
 	@echo "... des/des_util.s"
-	@echo "... des/fiestel.o"
-	@echo "... des/fiestel.i"
-	@echo "... des/fiestel.s"
 	@echo "... des/keygen.o"
 	@echo "... des/keygen.i"
 	@echo "... des/keygen.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... sdes/feistel.o"
-	@echo "... sdes/feistel.i"
-	@echo "... sdes/feistel.s"
 	@echo "... sdes/sdes.o"
 	@echo "... sdes/sdes.i"
 	@echo "... sdes/sdes.s"
+	@echo "... sdes/sdes_feistel.o"
+	@echo "... sdes/sdes_feistel.i"
+	@echo "... sdes/sdes_feistel.s"
 	@echo "... sdes/sdes_util.o"
 	@echo "... sdes/sdes_util.i"
 	@echo "... sdes/sdes_util.s"

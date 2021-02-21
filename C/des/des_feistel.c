@@ -1,4 +1,4 @@
-#include "fiestel.h"
+#include "des_feistel.h"
 
 static unsigned long expand_permutation(unsigned long x) {
     unsigned long result = 0UL;

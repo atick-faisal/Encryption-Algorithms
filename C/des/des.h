@@ -2,7 +2,7 @@
 #define ENCRYPTION_ALGORITHMS_DES_H
 
 #include <stdlib.h>
-#include "fiestel.h"
+#include "des_feistel.h"
 #include "keygen.h"
 #include "des_util.h"
 

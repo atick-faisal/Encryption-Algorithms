@@ -1,7 +1,7 @@
 #include "config.h"
 #include "sdes_util.h"
 #include "subkey.h"
-#include "feistel.h"
+#include "sdes_feistel.h"
 #include "sdes.h"
 
 const int IP[] = {2, 6, 3, 1, 4, 8, 5, 7};

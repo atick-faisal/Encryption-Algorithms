@@ -3,22 +3,22 @@
 
 CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: ../des/des.c
 CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: ../des/des.h
+CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: ../des/des_feistel.h
 CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: ../des/des_util.h
-CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: ../des/fiestel.h
 CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: ../des/keygen.h
+
+CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.o: ../des/des_feistel.c
+CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.o: ../des/des_feistel.h
 
 CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o: ../des/des_util.c
 CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o: ../des/des_util.h
-
-CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o: ../des/fiestel.c
-CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o: ../des/fiestel.h
 
 CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.o: ../des/keygen.c
 CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.o: ../des/keygen.h
 
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../des/des.h
+CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../des/des_feistel.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../des/des_util.h
-CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../des/fiestel.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../des/keygen.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../main.c
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../sdes/sdes.h
@@ -30,16 +30,16 @@ CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../substitution/vignere.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../transposition/railfence.h
 CMakeFiles/Encryption_Algorithms.dir/main.c.o: ../transposition/rowtransposition.h
 
-CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o: ../sdes/config.h
-CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o: ../sdes/feistel.c
-CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o: ../sdes/feistel.h
-
 CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o: ../sdes/config.h
-CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o: ../sdes/feistel.h
 CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o: ../sdes/sdes.c
 CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o: ../sdes/sdes.h
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o: ../sdes/sdes_feistel.h
 CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o: ../sdes/sdes_util.h
 CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o: ../sdes/subkey.h
+
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.o: ../sdes/config.h
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.o: ../sdes/sdes_feistel.c
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.o: ../sdes/sdes_feistel.h
 
 CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.o: ../sdes/config.h
 CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.o: ../sdes/sdes_util.c

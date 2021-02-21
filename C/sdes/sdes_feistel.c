@@ -1,5 +1,5 @@
 #include "config.h"
-#include "feistel.h"
+#include "sdes_feistel.h"
 
 const int EP[EP_LENGTH] = {4, 1, 2, 3, 2, 3, 4, 1};
 const int P4[P4_LENGTH] = {2, 4, 3, 1};

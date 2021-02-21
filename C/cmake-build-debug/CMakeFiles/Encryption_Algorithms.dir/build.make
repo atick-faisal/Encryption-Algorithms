@@ -181,18 +181,18 @@ CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_util.c -o CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.s
 
-CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o: CMakeFiles/Encryption_Algorithms.dir/flags.make
-CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o: ../sdes/feistel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andromeda/Embedded/Encryption-Algorithms/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o   -c /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/feistel.c
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.o: CMakeFiles/Encryption_Algorithms.dir/flags.make
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.o: ../sdes/sdes_feistel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andromeda/Embedded/Encryption-Algorithms/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.o   -c /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_feistel.c
 
-CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/feistel.c > CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.i
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_feistel.c > CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.i
 
-CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/feistel.c -o CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.s
+CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andromeda/Embedded/Encryption-Algorithms/C/sdes/sdes_feistel.c -o CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.s
 
 CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o: CMakeFiles/Encryption_Algorithms.dir/flags.make
 CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o: ../sdes/sdes.c
@@ -246,18 +246,18 @@ CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andromeda/Embedded/Encryption-Algorithms/C/des/keygen.c -o CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.s
 
-CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o: CMakeFiles/Encryption_Algorithms.dir/flags.make
-CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o: ../des/fiestel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andromeda/Embedded/Encryption-Algorithms/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o   -c /home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.c
+CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.o: CMakeFiles/Encryption_Algorithms.dir/flags.make
+CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.o: ../des/des_feistel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andromeda/Embedded/Encryption-Algorithms/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.o   -c /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_feistel.c
 
-CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.c > CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.i
+CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_feistel.c > CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.i
 
-CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andromeda/Embedded/Encryption-Algorithms/C/des/fiestel.c -o CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.s
+CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andromeda/Embedded/Encryption-Algorithms/C/des/des_feistel.c -o CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.s
 
 CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: CMakeFiles/Encryption_Algorithms.dir/flags.make
 CMakeFiles/Encryption_Algorithms.dir/des/des.c.o: ../des/des.c
@@ -282,12 +282,12 @@ Encryption_Algorithms_OBJECTS = \
 "CMakeFiles/Encryption_Algorithms.dir/transposition/railfence.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/transposition/rowtransposition.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.o" \
-"CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o" \
+"CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/sdes/subkey.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.o" \
-"CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o" \
+"CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.o" \
 "CMakeFiles/Encryption_Algorithms.dir/des/des.c.o"
 
 # External object files for target Encryption_Algorithms
@@ -301,12 +301,12 @@ Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/substitution/autokey
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/transposition/railfence.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/transposition/rowtransposition.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_util.c.o
-Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/sdes/feistel.c.o
+Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/sdes/sdes_feistel.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/sdes/sdes.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/sdes/subkey.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/des/des_util.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/des/keygen.c.o
-Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/des/fiestel.c.o
+Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/des/des_feistel.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/des/des.c.o
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/build.make
 Encryption_Algorithms: CMakeFiles/Encryption_Algorithms.dir/link.txt

@@ -1,5 +1,5 @@
-#ifndef ENCRYPTION_ALGORITHMS_FIESTEL_H
-#define ENCRYPTION_ALGORITHMS_FIESTEL_H
+#ifndef ENCRYPTION_ALGORITHMS_DES_FEISTEL_H
+#define ENCRYPTION_ALGORITHMS_DES_FEISTEL_H
 
 #include <stdio.h>
 
@@ -83,4 +83,4 @@ static const int S_BOXES[8][4][16] = {
 
 unsigned long apply_fiestel_des(unsigned long x, unsigned long key);
 
-#endif //ENCRYPTION_ALGORITHMS_FIESTEL_H
+#endif //ENCRYPTION_ALGORITHMS_DES_FEISTEL_H
