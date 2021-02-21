@@ -7,6 +7,7 @@
 #include "transposition/rowtransposition.h"
 #include "sdes/sdes.h"
 #include "des/keygen.h"
+#include "des/fiestel.h"
 
 
 void print_binary(int x, int size) {
@@ -112,13 +113,15 @@ int main() {
     decrypt_sdes(cipher_text_sdes, plain_text_sdes, key_sdes);
     printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_sdes);
 
+    unsigned long plain_text_des = 0x123456ABCD132536UL;
     unsigned long key_des = 0xAABB09182736CCDDUL;
     unsigned long keys[16];
     print_hex(key_des);
     printf("\n");
     generate_keys(key_des, keys);
     for (int i = 0; i < 16; i++) {
-        print_hex(keys[i]);
+        unsigned long block = apply_fiestel_des(plain_text_des, keys[i]);
+        print_hex(block);
     }
 
 
