@@ -6,6 +6,7 @@
 #include "transposition/railfence.h"
 #include "transposition/rowtransposition.h"
 #include "sdes/sdes.h"
+#include "des/keygen.h"
 
 
 void print_binary(int x, int size) {
@@ -110,6 +111,15 @@ int main() {
     printf("ENCRYPTION -> CIPHER TEXT : %s\n", cipher_text_sdes);
     decrypt_sdes(cipher_text_sdes, plain_text_sdes, key_sdes);
     printf("DECRYPTION -> PLAIN TEXT  : %s\n", plain_text_sdes);
+
+    unsigned long key_des = 0xAABB09182736CCDDUL;
+    unsigned long keys[16];
+    print_hex(key_des);
+    printf("\n");
+    generate_keys(key_des, keys);
+    for (int i = 0; i < 16; i++) {
+        print_hex(keys[i]);
+    }
 
 
     return 0;

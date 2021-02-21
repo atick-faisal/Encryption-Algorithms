@@ -1,6 +1,6 @@
 #include "util.h"
 
-const int IP[64] = {
+static const int IP[64] = {
         58, 50, 42, 34, 26, 18, 10, 2,
         60, 52, 44, 36, 28, 20, 12, 4,
         62, 54, 46, 38, 30, 22, 14, 6,
@@ -11,7 +11,7 @@ const int IP[64] = {
         63, 55, 47, 39, 31, 23, 15, 7
 };
 
-const int INV_IP[64] = {
+static const int INV_IP[64] = {
         40, 8, 48, 16, 56, 24, 64, 32,
         39, 7, 47, 15, 55, 23, 63, 31,
         38, 6, 46, 14, 54, 22, 62, 30,
@@ -22,7 +22,7 @@ const int INV_IP[64] = {
         33, 1, 41, 9, 49, 17, 57, 25
 };
 
-unsigned long initial_permutation(unsigned long x) {
+unsigned long initial_permutation_des(unsigned long x) {
     unsigned long result = 0UL;
     for (int i = 0; i < 64; i++) {
         u_int8_t current_bit = (x >> (64 - IP[i])) & 1UL;
@@ -32,17 +32,17 @@ unsigned long initial_permutation(unsigned long x) {
     return result;
 }
 
-unsigned long inverse_permutation(unsigned long x) {
+unsigned long inverse_permutation_des(unsigned long x) {
     unsigned long result = 0UL;
     for (int i = 0; i < 64; i++) {
-        u_int8_t current_bit = (x >> (64 - IP[i])) & 1UL;
+        u_int8_t current_bit = (x >> (64 - INV_IP[i])) & 1UL;
         unsigned long shifted_bit = current_bit << (63 - i);
         result += shifted_bit;
     }
     return result;
 }
 
-unsigned long switch_halves(unsigned long x) {
+unsigned long switch_halves_des(unsigned long x) {
     unsigned long msb = x >> 32;
     unsigned long lsb = x & 0xFFFFFFFFUL;
     return ((lsb << 32) | msb);
