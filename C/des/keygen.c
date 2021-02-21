@@ -39,3 +39,14 @@ unsigned long permuted_choice_2(unsigned long x) {
     }
     return result;
 }
+
+unsigned long left_shift(unsigned long x, int shift) {
+    unsigned long mask = (1 << 28) - 1UL;
+    unsigned long msb = x << 28;
+    unsigned long lsb = x & mask;
+    unsigned long shifted_msb = ((msb >> shift)
+                                 | (msb << (28 - shift))) & mask;
+    unsigned long shifted_lsb = ((lsb >> shift)
+                                 | (lsb << (28 - shift))) & mask;
+    return ((shifted_msb >> 28) | shifted_lsb);
+}
